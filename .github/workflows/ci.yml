@@ -12,7 +12,7 @@ jobs:
     env:
       GIT_CREDENTIALS: ${{ secrets.GIT_CREDENTIALS }}
     if: |
-      github.repository == 'flecourtier/Article1' &&
+      github.repository == 'flecourtier/Article1docs' &&
       !startsWith(github.event.head_commit.message, 'Release ') &&
       !contains(github.event.head_commit.message, 'ci skip')
     steps:
