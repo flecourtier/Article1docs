@@ -9,8 +9,6 @@ on:
 jobs:
   activate:
     runs-on: ubuntu-latest
-    env:
-      GIT_CREDENTIALS: ${{ secrets.GIT_CREDENTIALS }}
     if: |
       github.repository == 'flecourtier/Article1docs' &&
       !startsWith(github.event.head_commit.message, 'Release ') &&
@@ -42,6 +40,6 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
-          GITHUB_TOKEN: ${{ secrets.DOCS_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: docs/antora/public # The folder the action should deploy.
