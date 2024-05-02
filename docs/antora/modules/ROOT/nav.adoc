@@ -6,6 +6,10 @@
 ** xref:testcase1/cvg.adoc[Convergence des méthodes.]
 ** xref:testcase1/gains.adoc[Facteurs obtenus.]
 
+* xref:testcase1_v2/testcase1_v2.adoc[Cas test 1 - V2]
+** xref:testcase1_v2/cvg.adoc[Convergence des méthodes.]
+** xref:testcase1_v2/gains.adoc[Facteurs obtenus.]
+
 * xref:testcase2/testcase2.adoc[Cas test 2]
 ** xref:testcase2/cvg.adoc[Convergence des méthodes.]
 ** xref:testcase2/gains.adoc[Facteurs obtenus.]
