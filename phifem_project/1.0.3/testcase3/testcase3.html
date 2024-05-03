@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Gains obtenus :: PhiFEM Project - Docs</title>
-    <link rel="canonical" href="https://flecourtier.github.io/Article1docs/phifem_project/1.0.3/testcase2/gains.html">
+    <title>Cas test 3 :: PhiFEM Project - Docs</title>
+    <link rel="canonical" href="https://flecourtier.github.io/Article1docs/phifem_project/1.0.3/testcase3/testcase3.html">
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
@@ -114,25 +114,25 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="testcase2.html">Cas test 2</a>
+    <a class="nav-link" href="../testcase2/testcase2.html">Cas test 2</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../testcase2/cvg.html">Convergence des méthodes.</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../testcase2/gains.html">Facteurs obtenus.</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="testcase3.html">Cas test 3</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="cvg.html">Convergence des méthodes.</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="gains.html">Facteurs obtenus.</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../testcase3/testcase3.html">Cas test 3</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testcase3/cvg.html">Convergence des méthodes.</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testcase3/gains.html">Facteurs obtenus.</a>
   </li>
 </ul>
   </li>
@@ -167,8 +167,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../main_page.html">Phi-FEM PhD</a></li>
-    <li><a href="testcase2.html">Cas test 2</a></li>
-    <li><a href="gains.html">Facteurs obtenus.</a></li>
+    <li><a href="testcase3.html">Cas test 3</a></li>
   </ul>
 </nav>
 
@@ -195,7 +194,7 @@
 
     <a href="https://github.com/flecourtier/Article1docs">Open repository <i class="fab fa-github"></i></a>
     
-  <a href="https://github.com/flecourtier/Article1docs/edit/main/docs/antora/modules/ROOT/pages/testcase2/gains.adoc">Edit this Page <i class="fas fa-edit"></i></a>
+  <a href="https://github.com/flecourtier/Article1docs/edit/main/docs/antora/modules/ROOT/pages/testcase3/testcase3.adoc">Edit this Page <i class="fas fa-edit"></i></a>
 
     <a href="https://github.com/feelpp/book.feelpp.org/issues/new">Open issue <i class="fas fa-lightbulb"></i></a>
 
@@ -225,29 +224,72 @@ title="Fullscreen mode"
 </aside>
 
 <article class="doc">
-<h1 class="page">Gains obtenus</h1>
+<h1 class="page">Cas test 3</h1>
+<div class="sect1">
+<h2 id="_présentation"><a class="anchor" href="#_présentation"></a>1. Présentation</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p><strong>Résultats obtenus en P1 :</strong></p>
+<p>On considère le problème de Poisson avec condition de Dirichlet défini par</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\left\{
+\begin{aligned}
+-div(K\nabla u) &amp;= f, \; &amp;&amp;\text{dans } \; \Omega, \\
+u&amp;=g, \; &amp;&amp;\text{sur } \; \Gamma.
+\end{aligned}
+\right.\]
+</div>
+</div>
+<div class="paragraph">
+<p>homogène sur \(\Omega\) (\(g=0\))</p>
+</div>
+<div class="paragraph">
+<p>On définit \(\Omega\) comme étant le carré défini par</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\Omega=[0,1 \pi]^2\]
+</div>
+</div>
+<div class="paragraph">
+<p>On considèrera le second membre \(f\) défini par</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[f(x,y)=\exp\left(-\frac{(x-c_1)^2-(y-c_2)^2}{0.025 \sigma^2}\right)\]
+</div>
+</div>
+<div class="paragraph">
+<p>et la matrice \(K\) définie par</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[K=\begin{pmatrix}
+\epsilon x^2 + y^2 &amp; (\epsilon - 1)xy \\
+(\epsilon - 1)xy &amp; x^2 + \epsilon y^2
+\end{pmatrix}\]
+</div>
+</div>
+<div class="paragraph">
+<p>avec \(c_1,c_2\sim\mathcal{U}(0.4,0.6)\), \(\sigma\sim\mathcal{U}(0.1,0.8)\) et \(\epsilon\sim\mathcal{U}(0.01,1)\).</p>
+</div>
+<div class="paragraph">
+<p>Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc de comparer les solutions obtenues à une solution de référence, obtenue à partir d&#8217;une résolution par éléments finis sur un maillage sur-raffinée.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entraînement"><a class="anchor" href="#_entraînement"></a>2. Entraînement</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l&#8217;entraînement suivant.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../_images/facteurs/boxplot_facteurs_case2_degree1.png" alt="boxplot facteurs case2 degree1" width="640.0" height="500.0">
+<img src="../_images/training/test_fe3.png" alt="test fe3" width="840.0" height="680.0">
 </div>
 </div>
-<div class="paragraph">
-<p><strong>Résultats obtenus en P2 :</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/facteurs/boxplot_facteurs_case2_degree2.png" alt="boxplot facteurs case2 degree2" width="640.0" height="500.0">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Résultats obtenus en P3 :</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/facteurs/boxplot_facteurs_case2_degree3.png" alt="boxplot facteurs case2 degree3" width="640.0" height="500.0">
 </div>
 </div>
 </article>

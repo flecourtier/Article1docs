@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Gains obtenus :: PhiFEM Project - Docs</title>
-    <link rel="canonical" href="https://flecourtier.github.io/Article1docs/phifem_project/1.0.3/testcase2/gains.html">
+    <title>Convergence :: PhiFEM Project - Docs</title>
+    <link rel="canonical" href="https://flecourtier.github.io/Article1docs/phifem_project/1.0.3/testcase3/cvg.html">
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
@@ -114,25 +114,25 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="testcase2.html">Cas test 2</a>
+    <a class="nav-link" href="../testcase2/testcase2.html">Cas test 2</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="cvg.html">Convergence des méthodes.</a>
+    <a class="nav-link" href="../testcase2/cvg.html">Convergence des méthodes.</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="gains.html">Facteurs obtenus.</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../testcase2/gains.html">Facteurs obtenus.</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../testcase3/testcase3.html">Cas test 3</a>
+    <a class="nav-link" href="testcase3.html">Cas test 3</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testcase3/cvg.html">Convergence des méthodes.</a>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="cvg.html">Convergence des méthodes.</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testcase3/gains.html">Facteurs obtenus.</a>
+    <a class="nav-link" href="gains.html">Facteurs obtenus.</a>
   </li>
 </ul>
   </li>
@@ -167,8 +167,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../main_page.html">Phi-FEM PhD</a></li>
-    <li><a href="testcase2.html">Cas test 2</a></li>
-    <li><a href="gains.html">Facteurs obtenus.</a></li>
+    <li><a href="testcase3.html">Cas test 3</a></li>
+    <li><a href="cvg.html">Convergence des méthodes.</a></li>
   </ul>
 </nav>
 
@@ -195,7 +195,7 @@
 
     <a href="https://github.com/flecourtier/Article1docs">Open repository <i class="fab fa-github"></i></a>
     
-  <a href="https://github.com/flecourtier/Article1docs/edit/main/docs/antora/modules/ROOT/pages/testcase2/gains.adoc">Edit this Page <i class="fas fa-edit"></i></a>
+  <a href="https://github.com/flecourtier/Article1docs/edit/main/docs/antora/modules/ROOT/pages/testcase3/cvg.adoc">Edit this Page <i class="fas fa-edit"></i></a>
 
     <a href="https://github.com/feelpp/book.feelpp.org/issues/new">Open issue <i class="fas fa-lightbulb"></i></a>
 
@@ -225,31 +225,76 @@ title="Fullscreen mode"
 </aside>
 
 <article class="doc">
-<h1 class="page">Gains obtenus</h1>
+<h1 class="page">Convergence</h1>
 <div class="paragraph">
-<p><strong>Résultats obtenus en P1 :</strong></p>
+<p><strong>Convergence obtenue pour FEM :</strong> pour 2 paramètres sélectionnés aléatoirement.</p>
 </div>
-<div class="imageblock">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
-<img src="../_images/facteurs/boxplot_facteurs_case2_degree1.png" alt="boxplot facteurs case2 degree1" width="640.0" height="500.0">
+<img src="../_images/cvg/FEM_case3_param1.png" alt="FEM case3 param1" width="420.0" height="340.0">
 </div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../_images/cvg/FEM_case3_param2.png" alt="FEM case3 param2" width="420.0" height="340.0">
 </div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><strong>Résultats obtenus en P2 :</strong></p>
+<p><strong>Convergence obtenue pour la Correction :</strong> pour les mêmes paramètres.</p>
 </div>
-<div class="imageblock">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
-<img src="../_images/facteurs/boxplot_facteurs_case2_degree2.png" alt="boxplot facteurs case2 degree2" width="640.0" height="500.0">
+<img src="../_images/cvg/Corr_case3_param1.png" alt="Corr case3 param1" width="420.0" height="340.0">
 </div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../_images/cvg/Corr_case3_param2.png" alt="Corr case3 param2" width="420.0" height="340.0">
 </div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><strong>Résultats obtenus en P3 :</strong></p>
+<p><strong>Sur le même graphique :</strong></p>
 </div>
-<div class="imageblock">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
-<img src="../_images/facteurs/boxplot_facteurs_case2_degree3.png" alt="boxplot facteurs case2 degree3" width="640.0" height="500.0">
+<img src="../_images/cvg/FEM-Corr_case3_param1.png" alt="FEM Corr case3 param1" width="420.0" height="340.0">
 </div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../_images/cvg/FEM-Corr_case3_param2.png" alt="FEM Corr case3 param2" width="420.0" height="340.0">
 </div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </article>
   </div>
 </main>
