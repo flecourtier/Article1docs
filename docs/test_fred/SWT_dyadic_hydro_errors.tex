@@ -1,5 +1,9 @@
 \input{preamble.tex}
 
+\pgfplotstableread[
+col sep=comma,
+]{Corr_case1_param1.csv}\datatable
+
 \begin{document}
 	
 	\begin{tikzpicture}
@@ -21,7 +25,7 @@
 				ylabel style={at={(ticklabel* cs:1.01)},anchor=west},
 				% ticks and labels
 				xtick=data,			
-%				xticklabels from table={Corr_case1_param1.csv}{h},
+				%xticklabels from table={\datatable}{h},
 				% size
 				width=\plotwidth, height=\plotheight,
 				% marks
