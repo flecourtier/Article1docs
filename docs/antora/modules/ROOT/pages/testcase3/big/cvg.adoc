@@ -1,4 +1,4 @@
-# Convergence
+# Convergence - additive
 :cvg_dir: cvg/
 
 ## Précision

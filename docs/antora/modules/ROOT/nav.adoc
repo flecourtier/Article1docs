@@ -17,7 +17,8 @@
 * xref:testcase3/testcase3.adoc[Cas test 3]
 
 ** xref:testcase3/big/training.adoc[Big]
-*** xref:testcase3/big/cvg.adoc[Convergence des méthodes.]
+*** xref:testcase3/big/cvg.adoc[Convergence additive.]
+*** xref:testcase3/big/cvg_mult.adoc[Convergence multiplicative.]
 *** xref:testcase3/big/gains.adoc[Facteurs obtenus.]
 *** xref:testcase3/big/errormap.adoc[Erreurs du PINNs.]
 
