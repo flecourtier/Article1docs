@@ -1,0 +1,4 @@
+# Convergence
+:cvg_dir: cvg/
+
+A compléter !

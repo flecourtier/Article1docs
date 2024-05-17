@@ -1,0 +1,6 @@
+# Entraînement
+:training_dir: training/
+
+On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
+
+image::{training_dir}test_fe3_medium_param_largenet.png[width=840.0,height=680.0]

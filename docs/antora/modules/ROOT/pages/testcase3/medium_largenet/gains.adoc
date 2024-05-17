@@ -1,0 +1,4 @@
+# Gains obtenus
+:facteurs_dir: facteurs/
+
+A compléter !

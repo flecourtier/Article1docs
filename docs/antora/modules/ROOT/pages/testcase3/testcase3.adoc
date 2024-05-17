@@ -1,6 +1,5 @@
 :stem: latexmath
 # Cas test 3
-:training_dir: training/
 
 ## Présentation
 
@@ -40,12 +39,12 @@ K=\begin{pmatrix}
 \end{pmatrix}
 ++++
 
-avec stem:[c_1,c_2\sim\mathcal{U}(0.4,0.6)], stem:[\sigma\sim\mathcal{U}(0.1,0.8)] et stem:[\epsilon\sim\mathcal{U}(0.01,1)].
-
 Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc de comparer les solutions obtenues à une solution de référence, obtenue à partir d'une résolution par éléments finis sur un maillage sur-raffinée.
 
-## Entraînement
+On définira 3 sous-cas :
 
-On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
+* "xref:testcase3/big/training.adoc[Big]" (cas initial) : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.1,0.8]] et stem:[\epsilon\in[0.01,1]].
 
-image::{training_dir}test_fe3.png[width=840.0,height=680.0]
+* "xref:testcase3/medium/training.adoc[Medium]" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.3,0.6]] et stem:[\epsilon\in[0.04,0.25]].
+
+* "xref:testcase3/small/training.adoc[Small]" : stem:[c_1,c_2\in[0.45,0.55]], stem:[\sigma\in[0.4,0.6]] et stem:[\epsilon\in[0.05,0.2]].
