@@ -1,0 +1,6 @@
+# Gains obtenus (mult)
+
+**** xref:testcase3/big/gains_mult/M0.0.adoc[M0.0]
+**** xref:testcase3/big/gains_mult/M0.1.adoc[M0.1]
+**** xref:testcase3/big/gains_mult/M1.0.adoc[M1.0]
+**** xref:testcase3/big/gains_mult/M100.0.adoc[M100.0]

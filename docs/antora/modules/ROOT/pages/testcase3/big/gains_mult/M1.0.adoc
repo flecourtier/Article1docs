@@ -1,0 +1,14 @@
+# Gains obtenus - M=1.0
+:facteurs_dir: facteurs/mult/
+
+**Résultats obtenus en P1 :**
+
+image::{facteurs_dir}Mult_boxplot_facteurs_case3_degree1_M1.0.png[width=640.0,height=500.0]
+
+**Résultats obtenus en P2 :**
+
+image::{facteurs_dir}Mult_boxplot_facteurs_case3_degree2_M1.0.png[width=640.0,height=500.0]
+
+**Résultats obtenus en P3 :**
+
+image::{facteurs_dir}Mult_boxplot_facteurs_case3_degree3_M1.0.png[width=640.0,height=500.0]

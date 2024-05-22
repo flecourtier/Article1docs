@@ -1,0 +1,14 @@
+# Temps/Precision
+:time_precision_dir: time_precision/
+
+## Résultats obtenus en P1
+
+image::{time_precision_dir}time_precision_param1_degree1.png[width=640.0,height=500.0]
+
+**Temps nécessaire pour obtenir une erreur de stem:[10^{-3}] :**
+
+image::{time_precision_dir}times_table_param1_degree1_1e-3.png[width=640.0,height=500.0]
+
+**Temps nécessaire pour obtenir une erreur de stem:[10^{-4}] :**
+
+image::{time_precision_dir}times_table_param1_degree1_1e-4.png[width=640.0,height=500.0]
