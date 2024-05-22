@@ -5,7 +5,7 @@
 
 [cols="a,a"]
 |===
-|TODO
+|image::{cvg_dir}FEM-Mult_case3_param1_M0.0.png[width=420.0,height=340.0]
 |image::{cvg_dir}FEM-Mult_case3_param2_M0.0.png[width=420.0,height=340.0]
 |===
 
@@ -13,7 +13,7 @@
 
 [cols="a,a"]
 |===
-|TODO
+|image::{cvg_dir}FEM-Mult_case3_param1_M0.1.png[width=420.0,height=340.0]
 |image::{cvg_dir}FEM-Mult_case3_param2_M0.1.png[width=420.0,height=340.0]
 |===
 
@@ -21,7 +21,7 @@
 
 [cols="a,a"]
 |===
-|TODO
+|image::{cvg_dir}FEM-Mult_case3_param1_M1.0.png[width=420.0,height=340.0]
 |image::{cvg_dir}FEM-Mult_case3_param2_M1.0.png[width=420.0,height=340.0]
 |===
 
@@ -29,6 +29,6 @@
 
 [cols="a,a"]
 |===
-|TODO
+|image::{cvg_dir}FEM-Mult_case3_param1_M100.0.png[width=420.0,height=340.0]
 |image::{cvg_dir}FEM-Mult_case3_param2_M100.0.png[width=420.0,height=340.0]
 |===

@@ -1,7 +1,9 @@
-# Erreur du PINNs
+# Errormap
 :errormap_dir: errormap/medium/
 
-## Paramètre 1
+## Erreur du PINNs
+
+### Paramètre 1
 
 [cols="a,a"]
 |===
@@ -9,7 +11,7 @@
 |image::{errormap_dir}errormap_0_N40.png[width=630.0,height=510.0]
 |===
 
-## Paramètre 2
+### Paramètre 2
 
 [cols="a,a"]
 |===
@@ -17,7 +19,7 @@
 |image::{errormap_dir}errormap_1_N40.png[width=630.0,height=510.0]
 |===
 
-## Paramètre 3
+### Paramètre 3
 
 [cols="a,a"]
 |===
@@ -25,10 +27,44 @@
 |image::{errormap_dir}errormap_2_N40.png[width=630.0,height=510.0]
 |===
 
-## Paramètre 4
+### Paramètre 4
 
 [cols="a,a"]
 |===
 |image::{errormap_dir}errormap_3_N20.png[width=630.0,height=510.0]
 |image::{errormap_dir}errormap_3_N40.png[width=630.0,height=510.0]
+|===
+
+## Erreur dérivées secondes
+
+### Paramètre 1
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}errormap_deriv_0_N20.png[width=630.0,height=510.0]
+|image::{errormap_dir}errormap_deriv_0_N40.png[width=630.0,height=510.0]
+|===
+
+### Paramètre 2
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}errormap_deriv_1_N20.png[width=630.0,height=510.0]
+|image::{errormap_dir}errormap_deriv_1_N40.png[width=630.0,height=510.0]
+|===
+
+### Paramètre 3
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}errormap_deriv_2_N20.png[width=630.0,height=510.0]
+|image::{errormap_dir}errormap_deriv_2_N40.png[width=630.0,height=510.0]
+|===
+
+### Paramètre 4
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}errormap_deriv_3_N20.png[width=630.0,height=510.0]
+|image::{errormap_dir}errormap_deriv_3_N40.png[width=630.0,height=510.0]
 |===

@@ -20,19 +20,19 @@
 *** xref:testcase3/big/cvg.adoc[Convergence additive.]
 *** xref:testcase3/big/cvg_mult.adoc[Convergence multiplicative.]
 *** xref:testcase3/big/gains.adoc[Facteurs obtenus.]
-*** xref:testcase3/big/errormap.adoc[Erreurs du PINNs.]
+*** xref:testcase3/big/errormap.adoc[ErrorMap]
 
 ** xref:testcase3/medium/training.adoc[Medium (ClassicNet)]
 *** xref:testcase3/medium/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase3/medium/gains.adoc[Facteurs obtenus.]
-*** xref:testcase3/medium/errormap.adoc[Erreurs du PINNs.]
+*** xref:testcase3/medium/errormap.adoc[ErrorMap]
 
 ** xref:testcase3/medium_largenet/training.adoc[Medium (LargeNet)]
 *** xref:testcase3/medium_largenet/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase3/medium_largenet/gains.adoc[Facteurs obtenus.]
-*** xref:testcase3/medium_largenet/errormap.adoc[Erreurs du PINNs.]
+*** xref:testcase3/medium_largenet/errormap.adoc[ErrorMap]
 
 ** xref:testcase3/small/training.adoc[Small]
 *** xref:testcase3/small/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase3/small/gains.adoc[Facteurs obtenus.]
-*** xref:testcase3/small/errormap.adoc[Erreurs du PINNs.]
+*** xref:testcase3/small/errormap.adoc[ErrorMap]
