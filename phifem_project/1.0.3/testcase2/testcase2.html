@@ -88,6 +88,12 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../main_page.html">Article 1</a>
   </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">2D</span>
+<ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../testcase1/testcase1.html">Cas test 1</a>
@@ -222,6 +228,15 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">3D</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../testcase1_3D/testcase1_3D.html">Cas test 1</a>
+  </li>
+</ul>
+  </li>
 </ul>
   </nav>
 </div>
@@ -251,6 +266,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../main_page.html">Phi-FEM PhD</a></li>
+    <li>2D</li>
     <li><a href="testcase2.html">Cas test 2</a></li>
   </ul>
 </nav>
@@ -345,7 +361,7 @@ u&amp;=g, \; &amp;&amp;\text{sur } \; \Gamma.
 </div>
 <div class="stemblock">
 <div class="content">
-\[u_{ex}(x,y)=\exp(-((x-\mu_1)^2-(y-\mu_2)^2)/2)\times\sin(8x)\times\sin(8x)\]
+\[u_{ex}(x,y)=\exp(-((x-\mu_1)^2+(y-\mu_2)^2)/2)\times\sin(8x)\times\sin(8x)\]
 </div>
 </div>
 <div class="paragraph">
