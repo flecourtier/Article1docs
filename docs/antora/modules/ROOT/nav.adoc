@@ -2,6 +2,8 @@
 
 * xref:main_page.adoc[Article 1]
 
+.2D
+
 * xref:testcase1/testcase1.adoc[Cas test 1]
 ** xref:testcase1/v1/training.adoc[V1]
 *** xref:testcase1/v1/cvg.adoc[Convergence des méthodes.]
@@ -42,3 +44,7 @@
 *** xref:testcase3/small/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase3/small/gains.adoc[Facteurs obtenus.]
 *** xref:testcase3/small/errormap.adoc[ErrorMap]
+
+.3D
+
+* xref:testcase1_3D/testcase1_3D.adoc[Cas test 1]

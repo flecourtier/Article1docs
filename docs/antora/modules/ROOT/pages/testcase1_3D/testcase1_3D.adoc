@@ -1,5 +1,5 @@
 :stem: latexmath
-# Cas test 1
+# Cas test 1 - 3D
 
 On considère le problème de Poisson avec condition de Dirichlet défini par
 
@@ -13,17 +13,17 @@ u&=g, \; &&\text{sur } \; \Gamma.
 \right.
 ++++
 
-On définit stem:[\Omega] comme étant le carré défini par
+On définit stem:[\Omega] comme étant le cube défini par
 
 [stem]
 ++++
-\Omega=[-0.5 \pi, 0.5 \pi]^2
+\Omega=[-0.5 \pi, 0.5 \pi]^3
 ++++
 
 On considèrera pour ce cas test la solution analytique stem:[u_{ex}] défini par
 [stem]
 ++++
-u_{ex}(x,y)=\exp(-((x-\mu_1)^2+(y-\mu_2)^2)/2)\times\sin(2x)\times\sin(2y)
+u_{ex}(x,y,z)=\exp(-((x-\mu_1)^2+(y-\mu_2)^2+(z-\mu_3)^2)/2)\times\sin(2x)\times\sin(2y)\times\sin(2z)
 ++++
 
-homogène sur stem:[\Omega] (stem:[g=0]) et stem:[\mu_1,\mu_2\sim\mathcal{U}(-0.5, 0.5)].
+homogène sur stem:[\Omega] (stem:[g=0]) et stem:[\mu_1,\mu_2,\mu_3\sim\mathcal{U}(-0.5, 0.5)].
