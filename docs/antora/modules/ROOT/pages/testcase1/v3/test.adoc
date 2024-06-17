@@ -1,0 +1,24 @@
+# Test non exact BC
+:nonexactBC_dir: nonexactBC/
+
+## Premier test
+
+On test d'imposer 
+
+[stem]
+++++
+C=0 \quad \text{sur} \quad \Gamma
+++++
+
+image::{nonexactBC_dir}C0.png[width=840.0,height=680.0]
+
+## Second test
+
+On test d'imposer
+
+[stem]
+++++
+C=-u_\theta \quad \text{sur} \quad \Gamma
+++++
+
+image::{nonexactBC_dir}C-utheta.png[width=840.0,height=680.0]
