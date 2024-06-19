@@ -235,6 +235,36 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../testcase4/testcase4.html">Cas test 4</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../testcase4/v1/testcase4_v1.html">V1</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testcase4/v1/cvg.html">Convergence des méthodes.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testcase4/v1/errormap.html">ErrorMap</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../testcase4/v2/testcase4_v2.html">V2</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testcase4/v2/cvg.html">Convergence des méthodes.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../testcase4/v2/errormap.html">ErrorMap</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
@@ -242,7 +272,16 @@
     <span class="nav-text">3D</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../testcase1_3D/testcase1_3D.html">Cas test 1</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../testcase1_3D/time_precision.html">Temps/Precision</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../testcase1_3D/time_precision_deg.html">Degré de la prediction</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -336,8 +375,15 @@ title="Fullscreen mode"
 
 <article class="doc">
 <h1 class="page">Temps/Precision</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Résultats obtenus en P1</strong></p>
+</div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="_résultats_obtenus_en_p1"><a class="anchor" href="#_résultats_obtenus_en_p1"></a>1. Résultats obtenus en P1</h2>
+<h2 id="_sur_1_paramètre"><a class="anchor" href="#_sur_1_paramètre"></a>1. Sur 1 paramètre</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
@@ -345,20 +391,47 @@ title="Fullscreen mode"
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Temps nécessaire pour obtenir une erreur de \(10^{-3}\) :</strong></p>
+<p><strong>Temps et nombre de noeuds nécessaires pour obtenir une erreur de \(10^{-3}\) et \(10^{-4}\) :</strong></p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../_images/time_precision/times_table_param1_degree1_1e-3.png" alt="times table param1 degree1 1e 3" width="640.0" height="500.0">
+<img src="../../_images/time_precision/times_table_param1_degree1.png" alt="times table param1 degree1" width="640.0" height="500.0">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sur_un_ensemble_de_paramètres"><a class="anchor" href="#_sur_un_ensemble_de_paramètres"></a>2. Sur un ensemble de paramètres</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On considère un ensemble de $n_p$ paramètres : \((\mu_1^{(1)},\mu_2^{(1)}),\dots,(\mu_1^{(n_p)},\mu_2^{(n_p)})\).</p>
+</div>
+<div class="paragraph">
+<p>En prenant en compte le temps d&#8217;entraînement du PINNs \(t_{PINNs}=240s\), le temps de notre approche à résoudre $n_p$ problèmes est</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[Tot_{Add} = t_{PINNs} + n_p t_{Add}\]
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Temps nécessaire pour obtenir une erreur de \(10^{-4}\) :</strong></p>
+<p>et le temps de FEM est</p>
 </div>
-<div class="imageblock">
+<div class="stemblock">
 <div class="content">
-<img src="../../_images/time_precision/times_table_param1_degree1_1e-4.png" alt="times table param1 degree1 1e 4" width="640.0" height="500.0">
+\[Tot_{FEM} = n_p t_{FEM}\]
 </div>
+</div>
+<div class="paragraph">
+<p>Supposons que l&#8217;on souhaite obtenir une erreur de \(10^{-3}\). Pour résoudre $n_p$ problèmes, notre méthode est plus rapide que FEM (en considérant le temps d&#8217;entraînement du réseau) si</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[Tot_{Add} &lt; Tot_{FEM} \Rightarrow n_p &gt; \frac{t_{PINNs}}{t_{FEM} - t_{Add}} \approx 5.61 \Rightarrow n_p = 6\]
+</div>
+</div>
+<div class="paragraph">
+<p>Remarque : En considérant que les temps sont du même ordre pour chaque paramètre considéré.</p>
 </div>
 </div>
 </div>
