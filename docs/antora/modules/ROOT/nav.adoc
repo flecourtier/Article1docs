@@ -5,19 +5,23 @@
 .2D
 
 * xref:testcase1/testcase1.adoc[Cas test 1]
+
 ** xref:testcase1/v1/training.adoc[V1]
 *** xref:testcase1/v1/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase1/v1/gains.adoc[Facteurs obtenus.]
 *** xref:testcase1/v1/time_precision.adoc[Ratio temps/precision.]
+*** xref:testcase1/v1/plotcorr.adoc[Plots correction.]
 ** xref:testcase1/v2/training.adoc[V2]
 *** xref:testcase1/v2/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase1/v2/gains.adoc[Facteurs obtenus.]
+*** xref:testcase1/v2/plotcorr.adoc[Plots correction.]
 ** xref:testcase1/v3/training.adoc[V3]
 *** xref:testcase1/v3/test.adoc[Test non exact BC.]
 
 * xref:testcase2/testcase2.adoc[Cas test 2]
 ** xref:testcase2/cvg.adoc[Convergence des méthodes.]
 ** xref:testcase2/gains.adoc[Facteurs obtenus.]
+** xref:testcase2/plotcorr.adoc[Plots correction.]
 
 * xref:testcase3/testcase3.adoc[Cas test 3]
 
