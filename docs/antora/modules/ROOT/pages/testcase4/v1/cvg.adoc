@@ -25,12 +25,12 @@ image::{cvg_dir}FEM-Corr_case4_param1.png[width=420.0,height=340.0]
 
 **stem:[N=16] :** 
 
-image::{cvg_dir}case4_sup/plotcorr_case4_v1_N16.png[width=420.0,height=340.0]
+image::{cvg_dir}case4_sup/plotcorr_case4_v1_N16.png[width=1080.0,height=720.0]
 
 **stem:[N=32] :** 
 
-image::{cvg_dir}case4_sup/plotcorr_case4_v1_N32.png[width=420.0,height=340.0]
+image::{cvg_dir}case4_sup/plotcorr_case4_v1_N32.png[width=1080.0,height=720.0]
 
 **stem:[N=64] :** 
 
-image::{cvg_dir}case4_sup/plotcorr_case4_v1_N64.png[width=420.0,height=340.0]
+image::{cvg_dir}case4_sup/plotcorr_case4_v1_N64.png[width=1080.0,height=720.0]

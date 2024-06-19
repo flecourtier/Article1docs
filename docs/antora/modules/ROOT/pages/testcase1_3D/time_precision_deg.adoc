@@ -7,4 +7,4 @@ Plus pécisement on récupère les degrés de liberté associés au maillage ste
 
 **Résultats obtenus en P1 sur 1 paramètre**
 
-image::{time_precision_dir}deg_timeprecision.png[width=720.0,height=460.0]
+image::{time_precision_dir}deg_timeprecision.png[width=1080.0,height=720.0]
