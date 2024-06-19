@@ -1,0 +1,10 @@
+# Temps/Precision
+:time_precision_dir: time_precision/3D/
+
+On cherche à obtenir le temps et l'erreur de FEM pour différents degré d'évaluation de notre prediction.
+
+Plus pécisement on récupère les degrés de liberté associés au maillage stem:[\mathbb{P}^k] à stem:[N] fixé et en faisant varier stem:[k]. 
+
+**Résultats obtenus en P1 sur 1 paramètre**
+
+image::{time_precision_dir}deg_timeprecision.png[width=720.0,height=460.0]

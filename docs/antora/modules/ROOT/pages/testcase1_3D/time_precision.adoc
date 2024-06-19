@@ -1,0 +1,12 @@
+# Temps/Precision
+:time_precision_dir: time_precision/3D/
+
+On cherche à obtenir le temps et l'erreur de FEM pour différents stem:[N].
+
+**Résultats obtenus en P1 sur 1 paramètre**
+
+[cols="a,a"]
+|===
+|image::{time_precision_dir}plot_timeprecision.png[width=420.0,height=340.0]
+|image::{time_precision_dir}val_timeprecision.png[width=420.0,height=340.0]
+|===

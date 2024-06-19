@@ -1,0 +1,26 @@
+:stem: latexmath
+# Cas test 4
+:training_dir: training/
+
+## Présentation
+
+On considère le problème de Poisson avec condition mixtes défini par
+
+[stem]
+++++
+\left\{
+\begin{aligned}
+-\Delta u &= f, \; &&\text{dans } \; \Omega, \\
+u&=g, \; &&\text{sur } \; \Gamma_D, \\
+\frac{\partial u}{\partial n}&=h, \; &&\text{sur } \; \Gamma_N.
+\end{aligned}
+\right.
+++++
+
+avec stem:[\Gamma=\Gamma_D\cup\Gamma_N], stem:[g=0] sur stem:[\Gamma_D] et stem:[h=0] sur stem:[\Gamma_N].
+
+On considèrera le second membre stem:[f] défini par
+[stem]
+++++
+f(x,y)=1
+++++

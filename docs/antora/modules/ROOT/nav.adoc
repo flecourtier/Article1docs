@@ -47,6 +47,16 @@
 *** xref:testcase3/small/gains.adoc[Facteurs obtenus.]
 *** xref:testcase3/small/errormap.adoc[ErrorMap]
 
+* xref:testcase4/testcase4.adoc[Cas test 4]
+** xref:testcase4/v1/testcase4_v1.adoc[V1]
+*** xref:testcase4/v1/cvg.adoc[Convergence des méthodes.]
+*** xref:testcase4/v1/errormap.adoc[ErrorMap]
+** xref:testcase4/v2/testcase4_v2.adoc[V2]
+*** xref:testcase4/v2/cvg.adoc[Convergence des méthodes.]
+*** xref:testcase4/v2/errormap.adoc[ErrorMap]
+
 .3D
 
 * xref:testcase1_3D/testcase1_3D.adoc[Cas test 1]
+** xref:testcase1_3D/time_precision.adoc[Temps/Precision]
+** xref:testcase1_3D/time_precision_deg.adoc[Degré de la prediction]
