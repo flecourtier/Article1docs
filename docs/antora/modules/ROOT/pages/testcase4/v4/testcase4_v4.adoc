@@ -1,32 +1,39 @@
 :stem: latexmath
-# Cas test 4 - V2
+# Cas test 4 - V4
 :training_dir: training/
 
 ## Présentation
 
-On considère le problème de Poisson avec condition mixtes défini par
+On considère le problème de Poisson avec condition de Dirichlet défini par
 
 [stem]
 ++++
 \left\{
 \begin{aligned}
 -\Delta u &= f, \; &&\text{dans } \; \Omega, \\
-u&=g, \; &&\text{sur } \; \Gamma_D, \\
-\frac{\partial u}{\partial n}&=h, \; &&\text{sur } \; \Gamma_N.
+u&=g_I, \; &&\text{sur } \; \Gamma_I, \\
+u&=g_E, \; &&\text{sur } \; \Gamma_E.
 \end{aligned}
 \right.
 ++++
 
-avec stem:[\Gamma=\Gamma_D\cup\Gamma_N], stem:[g=0] sur stem:[\Gamma_D] et stem:[h=0] sur stem:[\Gamma_N].
+avec stem:[g_I=0] sur stem:[\Gamma_I] et stem:[g_E=0] sur stem:[\Gamma_E].
 
 On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5) et
 
-image::bc/testcase4_v2.png[width=260.0,height=140.0]
+image::bc/testcase4_v4.png[width=260.0,height=140.0]
 
 On considèrera le second membre stem:[f] défini par
 [stem]
 ++++
 f(x,y)=1
+++++
+
+On s'intéresse alors à stem:[u_\theta=\phi_I \phi_E w_\theta] où stem:[\phi_I] et stem:[\phi_E] sont les levelsets définies par
+
+[stem]
+++++
+\phi_I(x,y)=x^2+y^2-0.5^2 \quad \text{et} \quad \phi_E(x,y)=x^2+y^2-1
 ++++
 
 Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc de comparer les solutions obtenues à une solution de référence, obtenue à partir d'une résolution par éléments finis sur un maillage sur-raffinée.
@@ -35,4 +42,4 @@ Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc d
 
 On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
 
-image::{training_dir}test_fe4_v2.png[width=840.0,height=680.0]
+image::{training_dir}test_fe4_v4.png[width=840.0,height=680.0]

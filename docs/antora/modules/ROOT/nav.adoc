@@ -58,6 +58,12 @@
 ** xref:testcase4/v2/testcase4_v2.adoc[V2]
 *** xref:testcase4/v2/cvg.adoc[Convergence des méthodes.]
 *** xref:testcase4/v2/errormap.adoc[ErrorMap]
+** xref:testcase4/v3/testcase4_v3.adoc[V3]
+*** xref:testcase4/v3/cvg.adoc[Convergence des méthodes.]
+*** xref:testcase4/v3/errormap.adoc[ErrorMap]
+** xref:testcase4/v4/testcase4_v4.adoc[V4]
+*** xref:testcase4/v4/cvg.adoc[Convergence des méthodes.]
+*** xref:testcase4/v4/errormap.adoc[ErrorMap]
 
 .3D
 

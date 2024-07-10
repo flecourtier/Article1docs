@@ -1,0 +1,10 @@
+# Errormap
+:errormap_dir: errormap/testcase4/
+
+## Erreur du PINNs
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}errormap_0_v3_N20.png[width=630.0,height=510.0]
+|image::{errormap_dir}errormap_0_v3_N40.png[width=630.0,height=510.0]
+|===
