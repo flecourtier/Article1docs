@@ -296,6 +296,9 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../v5/testcase4_v5.html">V5</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -425,10 +428,10 @@ u&amp;=g_E, \; &amp;&amp;\text{sur } \; \Gamma_E.
 </div>
 </div>
 <div class="paragraph">
-<p>avec \(g_I=0\) sur \(\Gamma_I\) et \(g_E=0\) sur \(\Gamma_E\).</p>
+<p>avec \(g_I=\sin(0.1875)\) sur \(\Gamma_I\) et \(g_E=0\) sur \(\Gamma_E\).</p>
 </div>
 <div class="paragraph">
-<p>On définit \(\Omega\) comme étant un "donut" (le cercle unité avec un trou de rayon 0.5) et</p>
+<p>On définit \(\Omega\) comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -436,15 +439,23 @@ u&amp;=g_E, \; &amp;&amp;\text{sur } \; \Gamma_E.
 </div>
 </div>
 <div class="paragraph">
-<p>On considèrera le second membre \(f\) défini par</p>
+<p>On considèrera la solution analytique \(u_{ex}\) définie par</p>
 </div>
 <div class="stemblock">
 <div class="content">
-\[f(x,y)=1\]
+\[u_{ex}(x,y)=\sin\left(-\frac{1}{4}(x^2+y^2-1)\right)\]
 </div>
 </div>
 <div class="paragraph">
-<p>On s&#8217;intéresse alors à \(u_\theta=\phi_I \phi_E w_\theta\) où \(\phi_I\) et \(\phi_E\) sont les levelsets définies par</p>
+<p>et le second membre \(f\) associé</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[f(x,y)=-\frac{x^2+y^2}{4}\sin\left(-\frac{1}{4}(x^2+y^2-1)\right)+\cos\left(-\frac{1}{4}(x^2+y^2-1)\right)\]
+</div>
+</div>
+<div class="paragraph">
+<p>On s&#8217;intéresse alors à \(u_\theta=\phi_I \phi_E w_\theta + g\) où \(\phi_I\) et \(\phi_E\) sont les levelsets définies par</p>
 </div>
 <div class="stemblock">
 <div class="content">
@@ -452,7 +463,30 @@ u&amp;=g_E, \; &amp;&amp;\text{sur } \; \Gamma_E.
 </div>
 </div>
 <div class="paragraph">
-<p>Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc de comparer les solutions obtenues à une solution de référence, obtenue à partir d&#8217;une résolution par éléments finis sur un maillage sur-raffinée.</p>
+<p>et \(g=u_{ex}\).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Choix de g</div>
+<div class="paragraph">
+<p>Pour l&#8217;instant, les résultats obtenus l&#8217;ont été avec \(g=u_{ex}\) mais ça donne beaucoup trop d&#8217;information à l&#8217;entraînement.</p>
+</div>
+<div class="paragraph">
+<p>Il faudrait peut-être essayer avec une fonction plus simple, peut-être qu&#8217;une fonction de la forme suivante serait plus adaptée :</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[g = -g_I \frac{\phi_E}{0.75}+g_E \frac{\phi_I}{0.75}\]
+</div>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>

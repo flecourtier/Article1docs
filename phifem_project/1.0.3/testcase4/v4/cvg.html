@@ -296,6 +296,9 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../v5/testcase4_v5.html">V5</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -409,15 +412,7 @@ title="Fullscreen mode"
 <article class="doc">
 <h1 class="page">Convergence</h1>
 <div class="sect1">
-<h2 id="_précision"><a class="anchor" href="#_précision"></a>1. Précision</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>La difficulté dans ce cas réside dans le fait qu&#8217;on ne connaise pas la solution analytique du problème. Ainsi pour vérifier les convergences des méthodes, on va avoir besoin de construire une solution de référence suffisement précise. Pour celà, on va utiliser FEM sur un maillage surrafinée (ici on a pris \(N=1000\) et \(P3\)). Comme c&#8217;est un problème assez conséquent on s&#8217;est placé sur Gaya et on a du modifier le solveur de FEniCS pour qu&#8217;il puisse tourner sur un maillage de cette taille. Plus précisément on a utilisé un solveur itératif (ici un CG - Gradient conjugué) avec une tolérence fixée à \(10^{-13}\), ainsi qu&#8217;un préconditionneur "hypre_amg".</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_résultats"><a class="anchor" href="#_résultats"></a>2. Résultats</h2>
+<h2 id="_résultats"><a class="anchor" href="#_résultats"></a>1. Résultats</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Convergence obtenue pour FEM :</strong></p>
@@ -446,7 +441,7 @@ title="Fullscreen mode"
 </div>
 </div>
 <div class="sect1">
-<h2 id="_plot_correction"><a class="anchor" href="#_plot_correction"></a>3. Plot - Correction</h2>
+<h2 id="_plot_correction"><a class="anchor" href="#_plot_correction"></a>2. Plot - Correction</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>\(N=16\) :</strong></p>
