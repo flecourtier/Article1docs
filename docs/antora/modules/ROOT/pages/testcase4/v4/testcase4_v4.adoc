@@ -17,26 +17,43 @@ u&=g_E, \; &&\text{sur } \; \Gamma_E.
 \right.
 ++++
 
-avec stem:[g_I=0] sur stem:[\Gamma_I] et stem:[g_E=0] sur stem:[\Gamma_E].
+avec stem:[g_I=\sin(0.1875)] sur stem:[\Gamma_I] et stem:[g_E=0] sur stem:[\Gamma_E].
 
-On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5) et
+On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).
 
 image::bc/testcase4_v4.png[width=260.0,height=140.0]
 
-On considèrera le second membre stem:[f] défini par
+On considèrera la solution analytique stem:[u_{ex}] définie par
 [stem]
 ++++
-f(x,y)=1
+u_{ex}(x,y)=\sin\left(-\frac{1}{4}(x^2+y^2-1)\right)
+++++
+et le second membre stem:[f] associé
+[stem]
+++++
+f(x,y)=-\frac{x^2+y^2}{4}\sin\left(-\frac{1}{4}(x^2+y^2-1)\right)+\cos\left(-\frac{1}{4}(x^2+y^2-1)\right)
 ++++
 
-On s'intéresse alors à stem:[u_\theta=\phi_I \phi_E w_\theta] où stem:[\phi_I] et stem:[\phi_E] sont les levelsets définies par
+On s'intéresse alors à stem:[u_\theta=\phi_I \phi_E w_\theta + g] où stem:[\phi_I] et stem:[\phi_E] sont les levelsets définies par
 
 [stem]
 ++++
 \phi_I(x,y)=x^2+y^2-0.5^2 \quad \text{et} \quad \phi_E(x,y)=x^2+y^2-1
 ++++
 
-Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc de comparer les solutions obtenues à une solution de référence, obtenue à partir d'une résolution par éléments finis sur un maillage sur-raffinée.
+et stem:[g=u_{ex}].
+
+[NOTE]
+.Choix de g
+====
+Pour l'instant, les résultats obtenus l'ont été avec stem:[g=u_{ex}] mais ça donne beaucoup trop d'information à l'entraînement.
+
+Il faudrait peut-être essayer avec une fonction plus simple, peut-être qu'une fonction de la forme suivante serait plus adaptée :
+[stem]
+++++
+g = -g_I \frac{\phi_E}{0.75}+g_E \frac{\phi_I}{0.75}
+++++
+====
 
 ## Entraînement
 
