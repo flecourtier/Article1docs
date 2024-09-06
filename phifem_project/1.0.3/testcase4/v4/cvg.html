@@ -292,6 +292,9 @@
     <a class="nav-link" href="cvg.html">Convergence des méthodes.</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="corr.html">Plot Corr/FEM.</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="errormap.html">ErrorMap</a>
   </li>
 </ul>
@@ -411,25 +414,56 @@ title="Fullscreen mode"
 
 <article class="doc">
 <h1 class="page">Convergence</h1>
-<div class="sect1">
-<h2 id="_résultats"><a class="anchor" href="#_résultats"></a>1. Résultats</h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p><strong>Convergence obtenue pour FEM :</strong></p>
 </div>
-<div class="imageblock">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="../../_images/cvg/FEM_case4_v4_param1.png" alt="FEM case4 v4 param1" width="420.0" height="340.0">
 </div>
+<div class="title">Figure 1. \(g=0\) sur \(\Gamma_E\) et \(g=\sin(0.1875)\) sur \(\Gamma_I\).</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../../_images/cvg/FEM_case4_v4_param1_uex.png" alt="FEM case4 v4 param1 uex" width="420.0" height="340.0">
 </div>
+<div class="title">Figure 2. \(g=u_{ex}\) sur \(\Gamma_E\) et \(\Gamma_I\).</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p><strong>Convergence obtenue pour la Correction :</strong></p>
 </div>
-<div class="imageblock">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="../../_images/cvg/Corr_case4_v4_param1.png" alt="Corr case4 v4 param1" width="420.0" height="340.0">
 </div>
+<div class="title">Figure 3. \(C=0\) sur \(\Gamma_E\) et \(\Gamma_I\).</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="../../_images/cvg/Corr_case4_v4_param1_uex.png" alt="Corr case4 v4 param1 uex" width="420.0" height="340.0">
 </div>
+<div class="title">Figure 4. \(C=u_{ex}-u_{\theta}\) sur \(\Gamma_E\) et \(\Gamma_I\).</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p><strong>Sur le même graphique :</strong></p>
 </div>
@@ -437,37 +471,7 @@ title="Fullscreen mode"
 <div class="content">
 <img src="../../_images/cvg/FEM-Corr_case4_v4_param1.png" alt="FEM Corr case4 v4 param1" width="420.0" height="340.0">
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_plot_correction"><a class="anchor" href="#_plot_correction"></a>2. Plot - Correction</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>\(N=16\) :</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/cvg/case4_sup/plotcorr_case4_v4_N16.png" alt="plotcorr case4 v4 N16" width="1080.0" height="720.0">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>\(N=32\) :</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/cvg/case4_sup/plotcorr_case4_v4_N32.png" alt="plotcorr case4 v4 N32" width="1080.0" height="720.0">
-</div>
-</div>
-<div class="paragraph">
-<p><strong>\(N=64\) :</strong></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/cvg/case4_sup/plotcorr_case4_v4_N64.png" alt="plotcorr case4 v4 N64" width="1080.0" height="720.0">
-</div>
-</div>
-</div>
+<div class="title">Figure 5. FEM : \(g=u_{ex}\) / Correction : \(C=u_{ex}-u_{\theta}\).</div>
 </div>
 </article>
   </div>
