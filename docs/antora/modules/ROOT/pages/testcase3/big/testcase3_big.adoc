@@ -1,5 +1,7 @@
-# Entraînement
+# Cas test 3 : V1 - Large zone de paramètres
 :training_dir: training/
+
+## Entraînement (avec levelset)
 
 On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
 

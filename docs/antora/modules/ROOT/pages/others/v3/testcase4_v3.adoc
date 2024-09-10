@@ -4,7 +4,7 @@
 
 ## Présentation
 
-Ca cas est identique au cas xref:testcase4/v2/testcase4_v2.adoc[Cas test 4 - V2], à la différence que l'on ne considère pas de loss pour le bord Dirichlet. En effet, on s'intéresse à stem:[u_\theta=\phi_I w_\theta] où stem:[\phi_I] est la levelset pour le cercle intérieure définie par
+Ca cas est identique au cas xref:others/v2/testcase4_v2.adoc[Cas test 4 - V2], à la différence que l'on ne considère pas de loss pour le bord Dirichlet. En effet, on s'intéresse à stem:[u_\theta=\phi_I w_\theta] où stem:[\phi_I] est la levelset pour le cercle intérieure définie par
 
 [stem]
 ++++

@@ -1,6 +1,8 @@
-# Entraînement
+# Cas test 3 : Petite zone de paramètres
 :training_dir: training/
+
+## Entraînement
 
 On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
 
-image::{training_dir}test_fe1.png[width=840.0,height=680.0]
+image::{training_dir}test_fe3_small_param.png[width=840.0,height=680.0]

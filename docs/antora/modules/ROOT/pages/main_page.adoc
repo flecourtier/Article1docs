@@ -6,7 +6,7 @@ par Frédérique Lecourtier, Emmanuel Franck, Michel Duprez, Vanessa Lleras, Vic
 
 L'idée ici est de regrouper tous les résultats obtenus dans le cadre de l'Article 1, dont le sujet principale est la correction de prédiciton de réseaux de neuronnes.
 
-On considère le problème de Poisson avec condition de Dirichlet défini par
+Supposons qu'on considère le problème de Poisson avec condition de Dirichlet, défini par
 
 [stem]
 ++++
@@ -18,9 +18,11 @@ u&=g, \; &&\text{sur } \; \Gamma.
 \right.
 ++++
 
-On commence par entraîner un PINNs à résoudre ce problème et on obtient stem:[u_\theta]. 
+avec stem:[\Omega] le domaine, stem:[\Gamma] le bord, stem:[f] la source et stem:[g] la condition de Dirichlet.
 
-La correction a pour but de corriger le réseau en cherchant stem:[\tilde{u}=u_\theta+\tilde{C}] par un solveur FEM et le problème s'écrit alors
+On commence alors par entraîner un PINNs à prédire une solution du problème considère, noté stem:[u_\theta]. 
+
+La correction a pour but de corriger le réseau en cherchant stem:[\tilde{u}=u_\theta+\tilde{C}] qu'on va résoudre par un solveur FEM et le problème s'écrit alors
 
 [stem]
 ++++
@@ -34,7 +36,7 @@ La correction a pour but de corriger le réseau en cherchant stem:[\tilde{u}=u_\
 
 avec stem:[\tilde{f}=f+\Delta u_\theta] (en supposant que stem:[u_\theta=g] sur stem:[\Gamma]).
 
-## Cas tests
+## Résultats
 
 On considerera alors différents cas tests sur lesquels on voudra tester les points suivants.
 

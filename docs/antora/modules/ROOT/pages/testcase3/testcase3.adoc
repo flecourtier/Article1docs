@@ -1,5 +1,5 @@
 :stem: latexmath
-# Cas test 3
+# Cas test 3 - Carré + Elliptique + Dirichlet (non analytique)
 
 ## Présentation
 
@@ -43,8 +43,9 @@ Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc d
 
 On définira 3 sous-cas :
 
-* "xref:testcase3/big/training.adoc[Big]" (cas initial) : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.1,0.8]] et stem:[\epsilon\in[0.01,1]].
+* "xref:testcase3/big/testcase3_big.adoc[Big]" (cas initial) : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.1,0.8]] et stem:[\epsilon\in[0.01,1]].
 
-* "xref:testcase3/medium/training.adoc[Medium]" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.3,0.6]] et stem:[\epsilon\in[0.04,0.25]].
-
-* "xref:testcase3/small/training.adoc[Small]" : stem:[c_1,c_2\in[0.45,0.55]], stem:[\sigma\in[0.4,0.6]] et stem:[\epsilon\in[0.05,0.2]].
+* "Medium" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.3,0.6]] et stem:[\epsilon\in[0.04,0.25]].
+** xref:testcase3/medium/testcase3_mediumclassic.adoc[Medium (ClassicNet)]
+** xref:testcase3/medium_largenet/testcase3_mediumlarge.adoc[Medium (LargeNet)]
+* "xref:testcase3/small/testcase3_small.adoc[Small]" : stem:[c_1,c_2\in[0.45,0.55]], stem:[\sigma\in[0.4,0.6]] et stem:[\epsilon\in[0.05,0.2]].

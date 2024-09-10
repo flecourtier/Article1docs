@@ -1,0 +1,7 @@
+:stem: latexmath
+# Cas tests 3D
+
+On considère les cas tests 3D suivant :
+
+* Cas test 1 : Cube + Poisson + Dirichlet (solution analytique basse fréquence)
+** Version 1 : PINNs (MLP) entrainé avec levelset 

@@ -1,0 +1,23 @@
+:stem: latexmath
+# Cas tests 2D
+
+On considère les cas tests 2D suivant :
+
+* Cas test 1 : Carré + Poisson + Dirichlet (solution analytique basse fréquence)
+** Version 1 : PINNs (MLP) entrainé avec levelset 
+** Version 2 : PINNs (MLP) entrainé avec levelset + loss augmentée (dérivée 3ème)
+** Version 3 : PINNs (MLP) entrainé avec loss BC 
+
+* Cas test 2 : Carré + Poisson + Dirichlet (solution analytique haute fréquence) 
+** Version 1 : PINNs (Fourier) entrainé avec levelset 
+
+* Cas test 3 : Carré + Elliptique + Dirichlet (solution non analytique)
+** "Big" (cas initial) : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.1,0.8]] et stem:[\epsilon\in[0.01,1]].
+** "Medium (ClassicNet)" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.3,0.6]] et stem:[\epsilon\in[0.04,0.25]].
+** "Medium (LargeNet)" : "Medium" avec un réseau plus grand.
+** "Small" : stem:[c_1,c_2\in[0.45,0.55]], stem:[\sigma\in[0.4,0.6]] et stem:[\epsilon\in[0.05,0.2]].
+
+* Cas test 4 : Donut + Poisson + Dirichlet (solution analytique)
+** Version 1 : PINNs (MLP) entrainé avec levelset 
+
+* Cas test 5 : Donut + Poisson + Mixte ?

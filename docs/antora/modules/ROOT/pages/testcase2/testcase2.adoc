@@ -1,5 +1,5 @@
 :stem: latexmath
-# Cas test 2
+# Cas test 2 : Carré + Poisson + Dirichlet (haute fréquence)
 :training_dir: training/
 
 (Même problème que Cas test 1 - fréquences différentes)

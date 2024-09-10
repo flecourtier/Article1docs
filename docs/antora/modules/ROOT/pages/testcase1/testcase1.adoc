@@ -1,5 +1,5 @@
 :stem: latexmath
-# Cas test 1
+# Cas test 1 : Carré + Poisson + Dirichlet (basse fréquence)
 
 On considère le problème de Poisson avec condition de Dirichlet défini par
 

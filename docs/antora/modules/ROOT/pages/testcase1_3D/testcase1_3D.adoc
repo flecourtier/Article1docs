@@ -1,5 +1,5 @@
 :stem: latexmath
-# Cas test 1 - 3D
+# Cas test 1 - Cube + Poisson + Dirichlet (basse fréquence)
 
 On considère le problème de Poisson avec condition de Dirichlet défini par
 

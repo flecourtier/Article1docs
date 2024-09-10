@@ -1,4 +1,4 @@
-# Entraînement
+# Cas test 3 : Moyenne zone de paramètres + Réseau de taille moyenne  
 :training_dir: training/
 
 On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.

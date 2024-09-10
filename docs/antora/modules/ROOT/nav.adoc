@@ -1,79 +1,87 @@
 :stem: latexmath
 
-* xref:main_page.adoc[Article 1]
-
-.2D
-
-* xref:testcase1/testcase1.adoc[Cas test 1]
-
-** xref:testcase1/v1/training.adoc[V1]
-*** xref:testcase1/v1/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase1/v1/gains.adoc[Facteurs obtenus.]
-*** xref:testcase1/v1/time_precision.adoc[Ratio temps/precision.]
-*** xref:testcase1/v1/plotcorr.adoc[Plots correction.]
-** xref:testcase1/v2/training.adoc[V2]
-*** xref:testcase1/v2/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase1/v2/gains.adoc[Facteurs obtenus.]
-*** xref:testcase1/v2/plotcorr.adoc[Plots correction.]
-** xref:testcase1/v3/training.adoc[V3]
-*** xref:testcase1/v3/test.adoc[Test non exact BC.]
-
-* xref:testcase2/testcase2.adoc[Cas test 2]
-** xref:testcase2/cvg.adoc[Convergence des méthodes.]
-** xref:testcase2/gains.adoc[Facteurs obtenus.]
-** xref:testcase2/plotcorr.adoc[Plots correction.]
-
-* xref:testcase3/testcase3.adoc[Cas test 3]
-
-** xref:testcase3/big/training.adoc[Big]
-*** xref:testcase3/big/cvg.adoc[Convergence additive.]
-*** xref:testcase3/big/cvg_mult.adoc[Convergence multiplicative.]
-*** xref:testcase3/big/gains.adoc[Facteurs obtenus add.]
-*** xref:testcase3/big/gains_mult.adoc[Facteurs obtenus mult.]
+//////////////////
+// Cas tests 2D //
+//////////////////
+.xref:testcase2D.adoc[Cas tests 2D]
+// TestCase1 //
+* xref:testcase1/testcase1.adoc[Test1 - Carré + Poisson + Dirichlet (basse fréquence)]
+// V1
+** xref:testcase1/v1/testcase1_v1.adoc[V1 - Loss classique]
+*** xref:testcase1/v1/cvg.adoc[Convergence des méthodes]
+*** xref:testcase1/v1/gains.adoc[Facteurs obtenus]
+*** xref:testcase1/v1/time_precision.adoc[Ratio temps/precision]
+*** xref:testcase1/v1/plotcorr.adoc[Plots correction]
+// V2
+** xref:testcase1/v2/testcase1_v2.adoc[V2 - Loss augmentée (dérivées 3ème)]
+*** xref:testcase1/v2/cvg.adoc[Convergence des méthodes]
+*** xref:testcase1/v2/gains.adoc[Facteurs obtenus]
+*** xref:testcase1/v2/plotcorr.adoc[Plots correction]
+// V3
+** xref:testcase1/v3/testcase1_v3.adoc[V3 - Test non exact BC]
+*** xref:testcase1/v3/test.adoc[Test non exact BC]
+// TestCase2 //
+* xref:testcase2/testcase2.adoc[Test2 - Carré + Poisson + Dirichlet (haute fréquence)]
+** xref:testcase2/cvg.adoc[Convergence des méthodes]
+** xref:testcase2/gains.adoc[Facteurs obtenus]
+** xref:testcase2/plotcorr.adoc[Plots correction]
+// TestCase3 //
+* xref:testcase3/testcase3.adoc[Test3 - Carré + Elliptique + Dirichlet (non analytique)]
+// Big
+** xref:testcase3/big/testcase3_big.adoc[Big]
+*** xref:testcase3/big/cvg.adoc[Convergence additive]
+*** xref:testcase3/big/cvg_mult.adoc[Convergence multiplicative]
+*** xref:testcase3/big/gains.adoc[Facteurs obtenus add]
+*** xref:testcase3/big/gains_mult.adoc[Facteurs obtenus mult]
 **** xref:testcase3/big/gains_mult/M0.0.adoc[M0.0]
 **** xref:testcase3/big/gains_mult/M0.1.adoc[M0.1]
 **** xref:testcase3/big/gains_mult/M1.0.adoc[M1.0]
 **** xref:testcase3/big/gains_mult/M100.0.adoc[M100.0]
 *** xref:testcase3/big/errormap.adoc[ErrorMap]
-
-** xref:testcase3/medium/training.adoc[Medium (ClassicNet)]
-*** xref:testcase3/medium/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase3/medium/gains.adoc[Facteurs obtenus.]
+// Medium (ClassicNet)
+** xref:testcase3/medium/testcase3_mediumclassic.adoc[Medium (ClassicNet)]
+*** xref:testcase3/medium/cvg.adoc[Convergence des méthodes]
+*** xref:testcase3/medium/gains.adoc[Facteurs obtenus]
 *** xref:testcase3/medium/errormap.adoc[ErrorMap]
-
-** xref:testcase3/medium_largenet/training.adoc[Medium (LargeNet)]
+// Medium (LargeNet)
+** xref:testcase3/medium_largenet/testcase3_mediumlarge.adoc[Medium (LargeNet)]
 *** xref:testcase3/medium_largenet/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase3/medium_largenet/gains.adoc[Facteurs obtenus.]
+*** xref:testcase3/medium_largenet/gains.adoc[Facteurs obtenus]
 *** xref:testcase3/medium_largenet/errormap.adoc[ErrorMap]
-
-** xref:testcase3/small/training.adoc[Small]
-*** xref:testcase3/small/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase3/small/gains.adoc[Facteurs obtenus.]
+// Small
+** xref:testcase3/small/testcase3_small.adoc[Small]
+*** xref:testcase3/small/cvg.adoc[Convergence des méthodes]
+*** xref:testcase3/small/gains.adoc[Facteurs obtenus]
 *** xref:testcase3/small/errormap.adoc[ErrorMap]
+// TestCase4
+* xref:testcase4/testcase4.adoc[Test4 - Donut + Poisson + Dirichlet (analytique)]
+** xref:testcase4/cvg.adoc[Convergence des méthodes]
+** xref:testcase4/gains.adoc[Facteurs obtenus]
+** xref:testcase4/corr.adoc[Plot correction]
+** xref:testcase4/errormap.adoc[ErrorMap]
+// Autres
+* xref:others/others.adoc[Autres cas tests]
+** xref:others/v1/testcase4_v1.adoc[V1]
+*** xref:others/v1/cvg.adoc[Convergence des méthodes]
+*** xref:others/v1/errormap.adoc[ErrorMap]
+** xref:others/v2/testcase4_v2.adoc[V2]
+*** xref:others/v2/cvg.adoc[Convergence des méthodes]
+*** xref:others/v2/errormap.adoc[ErrorMap]
+** xref:others/v3/testcase4_v3.adoc[V3]
+*** xref:others/v3/cvg.adoc[Convergence des méthodes]
+*** xref:others/v3/errormap.adoc[ErrorMap]
+** xref:others/v4/testcase4_v4.adoc[V4]
+*** xref:others/v4/cvg.adoc[Convergence des méthodes]
+*** xref:others/v4/corr.adoc[Plot Corr/FEM.]
+*** xref:others/v4/errormap.adoc[ErrorMap]
+** xref:others/v5/testcase4_v5.adoc[V5]
 
-* xref:testcase4/testcase4.adoc[Cas test 4]
-** xref:testcase4/v1/testcase4_v1.adoc[V1]
-*** xref:testcase4/v1/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase4/v1/errormap.adoc[ErrorMap]
-** xref:testcase4/v2/testcase4_v2.adoc[V2]
-*** xref:testcase4/v2/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase4/v2/errormap.adoc[ErrorMap]
-** xref:testcase4/v3/testcase4_v3.adoc[V3]
-*** xref:testcase4/v3/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase4/v3/errormap.adoc[ErrorMap]
-** xref:testcase4/v4/testcase4_v4.adoc[V4]
-*** xref:testcase4/v4/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase4/v4/corr.adoc[Plot Corr/FEM.]
-*** xref:testcase4/v4/errormap.adoc[ErrorMap]
-** xref:testcase4/v5/testcase4_v5.adoc[V5]
-** xref:testcase4/v7/testcase4_v7.adoc[V7]
-*** xref:testcase4/v7/cvg.adoc[Convergence des méthodes.]
-*** xref:testcase4/v7/corr.adoc[Plot Corr/FEM.]
-*** xref:testcase4/v7/errormap.adoc[ErrorMap]
-*** xref:testcase4/v7/gains.adoc[Facteurs obtenus.]
 
-.3D
-
-* xref:testcase1_3D/testcase1_3D.adoc[Cas test 1]
+//////////////////
+// Cas tests 3D //
+//////////////////
+.xref:testcase3D.adoc[Cas tests 3D]
+// TestCase1
+* xref:testcase1_3D/testcase1_3D.adoc[Test1 - Cube + Poisson + Dirichlet (basse fréquence)]
 ** xref:testcase1_3D/time_precision.adoc[Temps/Precision]
 ** xref:testcase1_3D/time_precision_deg.adoc[Degré de la prediction]
