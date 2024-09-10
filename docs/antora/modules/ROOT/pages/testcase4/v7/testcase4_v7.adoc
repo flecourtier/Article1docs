@@ -1,0 +1,59 @@
+:stem: latexmath
+# Cas test 4 - V4
+:training_dir: training/
+
+## Présentation
+
+On considère le problème de Poisson avec condition de Dirichlet défini par
+
+[stem]
+++++
+\left\{
+\begin{aligned}
+-\Delta u &= f, \; &&\text{dans } \; \Omega, \\
+u&=g_I, \; &&\text{sur } \; \Gamma_I, \\
+u&=g_E, \; &&\text{sur } \; \Gamma_E.
+\end{aligned}
+\right.
+++++
+
+avec stem:[g_I=u_{ex}] sur stem:[\Gamma_I] et stem:[g_E=0] sur stem:[\Gamma_E].
+
+On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).
+
+image::bc/testcase4_v4.png[width=260.0,height=140.0]
+
+On considèrera la solution analytique stem:[u_{ex}] définie par
+[stem]
+++++
+u_{ex}(x,y)=\frac{1}{2\pi}\exp\left(\frac{-1}{2}\left((x-\mu_1)^2+(y-\mu_2)^2\right)\right)\sin\left(-\frac{1}{4}(x^2+y^2-1)\right)
+++++
+où stem:[\mu_1,\mu_2\in[-0.5,0.5]] et le second membre stem:[f] associé.
+
+On s'intéresse alors à stem:[u_\theta=\phi_I \phi_E w_\theta + g] où stem:[\phi_I] et stem:[\phi_E] sont les levelsets définies par
+
+[stem]
+++++
+\phi_I(x,y)=x^2+y^2-0.5^2 \quad \text{et} \quad \phi_E(x,y)=x^2+y^2-1
+++++
+
+et stem:[g=u_{ex}].
+
+[NOTE]
+.Choix de g
+====
+Pour l'instant, les résultats obtenus l'ont été avec stem:[g=u_{ex}] mais ça donne beaucoup trop d'information à l'entraînement.
+
+Il faudrait peut-être essayer avec une fonction plus simple, peut-être qu'une fonction de la forme suivante serait plus adaptée :
+[stem]
+++++
+g = -g_I \frac{\phi_E}{0.75}+g_E \frac{\phi_I}{0.75}
+++++
+Or contrairement à la version 4, stem:[g_I] n'est pas une constante ici.
+====
+
+## Entraînement
+
+On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
+
+image::{training_dir}test_fe4_v7.png[width=840.0,height=680.0]
