@@ -59,6 +59,8 @@
 ** xref:testcase4/gains.adoc[Facteurs obtenus]
 ** xref:testcase4/corr.adoc[Plot correction]
 ** xref:testcase4/errormap.adoc[ErrorMap]
+// TestCase5
+* xref:testcase5/testcase5.adoc[Test5 - Donut + Poisson + Mixte (analytique)]
 // Autres
 * xref:others/others.adoc[Autres cas tests]
 ** xref:others/v1/testcase4_v1.adoc[V1]
@@ -75,7 +77,6 @@
 *** xref:others/v4/corr.adoc[Plot Corr/FEM.]
 *** xref:others/v4/errormap.adoc[ErrorMap]
 ** xref:others/v5/testcase4_v5.adoc[V5]
-
 
 //////////////////
 // Cas tests 3D //

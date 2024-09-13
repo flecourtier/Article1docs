@@ -21,7 +21,7 @@ avec stem:[\Gamma=\Gamma_D\cup\Gamma_N], stem:[g=0] sur stem:[\Gamma_D] et stem:
 
 On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5) et
 
-image::bc/testcase4_v2.png[width=260.0,height=140.0]
+image::bc/others_v2.png[width=260.0,height=140.0]
 
 On considèrera le second membre stem:[f] défini par
 [stem]
@@ -35,4 +35,4 @@ Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc d
 
 On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
 
-image::{training_dir}test_fe4_v2.png[width=840.0,height=680.0]
+image::{training_dir}others_v2.png[width=840.0,height=680.0]

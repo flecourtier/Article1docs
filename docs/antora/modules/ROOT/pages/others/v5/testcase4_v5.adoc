@@ -21,7 +21,7 @@ avec stem:[h_I=-0.5] sur stem:[\Gamma_I] et stem:[h_E=2.0] sur stem:[\Gamma_E].
 
 On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5) et
 
-image::bc/testcase4_v5.png[width=260.0,height=140.0]
+image::bc/others_v5.png[width=260.0,height=140.0]
 
 On considèrera pour ce cas test la solution analytique stem:[u_{ex}] défini par
 [stem]
