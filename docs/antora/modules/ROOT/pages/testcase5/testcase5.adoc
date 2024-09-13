@@ -59,7 +59,7 @@ La fonction levelset est alors définie, comme présenté dans le papier, par
 On définit alors le réseau de neurones par
 [stem]
 ++++
-u_\theta(x,y)=w_1u_2+w_2u_1+\phi_E\phi_I^2w_\theta^2
+u_\theta(x,y)=w_1u_2+w_2u_1+\phi_E\phi_I^2w_\theta
 ++++
 avec 
 [stem]
