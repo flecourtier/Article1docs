@@ -14,7 +14,7 @@ On considère le problème de Poisson avec conditions mixtes (Dirichlet Et Robin
 \begin{aligned}
 -\Delta u &= f, \; &&\text{dans } \; \Omega, \\
 u&=g_E, \; &&\text{sur } \; \Gamma_E, \\
-\frac{\partial u}{\partial n}&=h_I, \; &&\text{sur } \; \Gamma_I.
+\frac{\partial u}{\partial n}+u&=h_I, \; &&\text{sur } \; \Gamma_I.
 \end{aligned}
 \right.
 ++++
