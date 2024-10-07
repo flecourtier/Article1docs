@@ -53,6 +53,10 @@
 *** xref:testcase3/small/cvg.adoc[Convergence des méthodes]
 *** xref:testcase3/small/gains.adoc[Facteurs obtenus]
 *** xref:testcase3/small/errormap.adoc[ErrorMap]
+// New
+** xref:testcase3/new/testcase3_new.adoc[New]
+*** xref:testcase3/new/cvg.adoc[Convergence des méthodes]
+*** xref:testcase3/new/gains.adoc[Facteurs obtenus]
 // TestCase4
 * xref:testcase4/testcase4.adoc[Test4 - Donut + Poisson + Dirichlet (analytique)]
 ** xref:testcase4/cvg.adoc[Convergence des méthodes]

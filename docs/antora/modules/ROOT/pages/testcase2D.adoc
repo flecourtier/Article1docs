@@ -16,10 +16,13 @@ On considère les cas tests 2D suivant :
 ** "Medium (ClassicNet)" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.3,0.6]] et stem:[\epsilon\in[0.04,0.25]].
 ** "Medium (LargeNet)" : "Medium" avec un réseau plus grand.
 ** "Small" : stem:[c_1,c_2\in[0.45,0.55]], stem:[\sigma\in[0.4,0.6]] et stem:[\epsilon\in[0.05,0.2]].
+** "New" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.4,0.8]] et stem:[\epsilon\in[0.5,1]].
 
 * Cas test 4 : Donut + Poisson + Dirichlet (solution analytique)
 ** Version 1 : PINNs (MLP) entrainé avec levelset 
 
 * Cas test 5 : Donut + Poisson + Mixte
+** Version 1 : PINNs (MLP) entrainé avec levelset 
+** Version 2 : PINNs (MLP) entrainé avec levelset + loss augmentée (dérivée 3ème)
 
 * Cas test 6 : Donut + Poisson modifié + Neumann

@@ -1,0 +1,6 @@
+# Gains obtenus
+:facteurs_dir: facteurs/
+
+**Résultats obtenus en P1 :**
+
+image::{facteurs_dir}boxplot_facteurs_case3_new_degree1.png[width=640.0,height=500.0]
