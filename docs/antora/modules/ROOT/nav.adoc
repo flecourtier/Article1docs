@@ -73,6 +73,7 @@
 *** xref:testcase5/v2/cvg.adoc[Convergence des méthodes]
 // TestCase6
 * xref:testcase6/testcase6.adoc[Test6 - Donut + Poisson modifié + Neumann (analytique)]
+** xref:testcase6/cvg.adoc[Convergence des méthodes]
 // Autres
 * xref:others/others.adoc[Autres cas tests]
 ** xref:others/v1/testcase4_v1.adoc[V1]
