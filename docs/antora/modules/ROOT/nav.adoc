@@ -61,6 +61,14 @@
 ** xref:testcase4/errormap.adoc[ErrorMap]
 // TestCase5
 * xref:testcase5/testcase5.adoc[Test5 - Donut + Poisson + Mixte (analytique)]
+// V1
+** xref:testcase5/v1/testcase5_v1.adoc[V1 - Loss classique]
+*** xref:testcase5/v1/cvg.adoc[Convergence des méthodes]
+// V2
+** xref:testcase5/v2/testcase5_v2.adoc[V2 - Loss augmentée (dérivées 3ème)]
+*** xref:testcase5/v2/cvg.adoc[Convergence des méthodes]
+// TestCase6
+* xref:testcase6/testcase6.adoc[Test6 - Donut + Poisson modifié + Neumann (analytique)]
 // Autres
 * xref:others/others.adoc[Autres cas tests]
 ** xref:others/v1/testcase4_v1.adoc[V1]

@@ -20,4 +20,6 @@ On considère les cas tests 2D suivant :
 * Cas test 4 : Donut + Poisson + Dirichlet (solution analytique)
 ** Version 1 : PINNs (MLP) entrainé avec levelset 
 
-* Cas test 5 : Donut + Poisson + Mixte ?
+* Cas test 5 : Donut + Poisson + Mixte
+
+* Cas test 6 : Donut + Poisson modifié + Neumann
