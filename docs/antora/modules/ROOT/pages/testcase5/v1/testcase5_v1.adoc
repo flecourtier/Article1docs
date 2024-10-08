@@ -1,4 +1,4 @@
-# Cas test 6 : V1 - Loss classique
+# Cas test 5 : V1 - Loss classique
 :training_dir: training/
 
 ## Entraînement (avec levelset)

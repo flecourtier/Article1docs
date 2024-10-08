@@ -73,7 +73,14 @@
 *** xref:testcase5/v2/cvg.adoc[Convergence des méthodes]
 // TestCase6
 * xref:testcase6/testcase6.adoc[Test6 - Donut + Poisson modifié + Neumann (analytique)]
-** xref:testcase6/cvg.adoc[Convergence des méthodes]
+// V1
+** xref:testcase6/v1/testcase6_v1.adoc[V1 - Loss classique]
+*** xref:testcase6/v1/cvg.adoc[Convergence des méthodes]
+// V2
+** xref:testcase6/v2/testcase6_v2.adoc[V2 - Loss augmentée (dérivées 3ème)]
+*** xref:testcase6/v2/cvg.adoc[Convergence des méthodes]
+// TestCase7
+* xref:testcase7/testcase7.adoc[Test7 - SquareDonut + Poisson modifié + Neumann (analytique)]
 // Autres
 * xref:others/others.adoc[Autres cas tests]
 ** xref:others/v1/testcase4_v1.adoc[V1]

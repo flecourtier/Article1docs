@@ -1,5 +1,5 @@
 :stem: latexmath
-# Cas test 6 - Donut + Poisson modifié + Neumann
+# Cas test 7 - SquareDonut + Poisson modifié + Neumann
 :training_dir: training/
 
 On considère le problème de Poisson modifié avec conditions de Neumann défini par
@@ -15,34 +15,30 @@ On considère le problème de Poisson modifié avec conditions de Neumann défin
 \right.
 ++++
 
-avec stem:[h_E=2\cos(1)] sur stem:[\Gamma_E] et stem:[h_I=-\cos(1/4)] sur stem:[\Gamma_I].
+On définit stem:[\Omega] comme étant un "squaredonut" défini par
+[stem]
+++++
+\Omega = [-1,1]^2 \backslash [-0.5,0.5]^2
+++++
 
-On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).
-
-image::bc/testcase6.png[width=260.0,height=140.0]
+image::bc/testcase7.png[width=260.0,height=140.0]
 
 On considèrera la solution analytique stem:[u_{ex}] définie par
 [stem]
 ++++
-u_{ex}(x,y)=\sin(x^2+y^2)
+u_{ex}(x,y)=\sin(2\pi x)\sin(2\pi y)
 ++++
 et le second membre stem:[f] associé, défini par
 [stem]
 ++++
-f(x,y)=(4(x^2+y^2)+1)\sin(x^2+y^2) - 4\cos(x^2+y^2)
+f(x,y)=(1+8\pi^2)\sin(2\pi x)\sin(2\pi y)
 ++++
 
 On définit alors les fonctions levelset respectives par
 [stem]
 ++++
-\phi_I(x,y)=\sqrt{x^2+y^2}-0.5 \quad \text{et} \quad \phi_E(x,y)=1-\sqrt{x^2+y^2}
+\phi_I(x,y)=\max(|x|,|y|)-0.5 \quad \text{et} \quad \phi_E(x,y)=\max(|x|,|y|)-1
 ++++
-
-[NOTE]
-.Signe de la levelset
-====
-Attention, comme présenté dans le xref:testcase5/testcase5.adoc[Cas test 5], dans le papier la levelset est définie comme étant positive à l'intérieur du domaine et négative à l'extérieur. Dans le cas tests précédents le 5, c'était l'inverse.
-====
 
 [NOTE]
 .Fonction levelset normalisée
@@ -50,10 +46,10 @@ Attention, comme présenté dans le xref:testcase5/testcase5.adoc[Cas test 5], d
 On remarquera que les levelsets considérées ici sont normalisées, plus précisément la norme de leur gradient est égale à 1 sur le bord du domaine. 
 ====
 
-La fonction levelset est alors définie, comme présenté dans le papier, par
+La fonction levelset est alors définie par
 [stem]
 ++++
-\phi(x,y)=\frac{\phi_E\phi_I}{\phi_E+\phi_I}
+\phi(x,y)=\min(\phi_E,-\phi_I)
 ++++
 
 On définit alors le réseau de neurones par
@@ -66,4 +62,8 @@ avec
 ++++
 h = h_E\frac{\phi_I^2}{\phi_I^2+\phi_E^2} + h_I\frac{\phi_E^2}{\phi_I^2+\phi_E^2}
 ++++
-où stem:[w_{\theta,1}] et stem:[w_{\theta,2}] sont deux réseaus de neurones.
+où stem:[w_{\theta,1}] et stem:[w_{\theta,2}] sont deux réseaus de neurones et 
+[stem]
+++++
+h_E = 2\pi y\sin(2\pi x) + 2\pi x\sin(2\pi y) \quad \text{et} \quad h_I = 2h_E
+++++

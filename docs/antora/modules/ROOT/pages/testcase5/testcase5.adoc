@@ -35,7 +35,7 @@ et le second membre stem:[f=0] associé.
 On définit alors les fonctions levelset respectives par
 [stem]
 ++++
-\phi_I(x,y)=x^2+y^2-0.5^2 \quad \text{et} \quad \phi_E(x,y)=x^2+y^2-1
+\phi_I(x,y)=\sqrt{x^2+y^2}-0.25 \quad \text{et} \quad \phi_E(x,y)=1-\sqrt{x^2+y^2}
 ++++
 
 [NOTE]
