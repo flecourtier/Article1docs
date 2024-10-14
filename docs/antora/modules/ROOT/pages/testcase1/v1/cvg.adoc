@@ -1,6 +1,8 @@
 # Convergence
 :cvg_dir: cvg/
 
+## Résultats
+
 **Convergence obtenue pour FEM :** pour 2 paramètres sélectionnés aléatoirement.
 
 [cols="a,a"]
@@ -24,3 +26,32 @@
 |image::{cvg_dir}FEM-Corr_case1_param1.png[width=420.0,height=340.0]
 |image::{cvg_dir}FEM-Corr_case1_param2.png[width=420.0,height=340.0]
 |===
+
+## Analyse - Pic en stem:[\mathbb{P}_3] pour stem:[N=256]
+
+### Tests sur la Correction
+
+Calcul de l'erreur stem:[L^2] sur stem:[V_{ex}], interpolation de stem:[u_{\theta}] sur stem:[V_{\theta}].
+
+**Méthode 1 : stem:[V_{\theta}=V_{ex}] - espaces de fonction stem:[\mathbb{P}_k] associé à stem:[N].**
+
+* **stem:[k=5]** : stem:[N=256] - erreur stem:[L^2] = 7.11e-10.
+* **stem:[k=6]** : stem:[N=16,\dots,256] - erreurs stem:[L^2] = 2.09e-06,8.09e-08,4.53e-09,2.72e-10,4.16e-11.
+* **stem:[k=10]** : +
+stem:[N=256] - solveur direct - erreur stem:[L^2] = 2.19e-10. +
+stem:[N=256] - solveur itératif - erreur stem:[L^2] = 2.19e-10. +
+(tolérence : 1e-13 et 1e-15, solveur : CG, préconditionneur : hypre_amg)
+
+**Méthode 2 : stem:[V_{\theta}] espace de fonction stem:[\mathbb{P}_{k}] associé à stem:[N] (stem:[k=5,\dots,10]) ; stem:[V_{ex}] espace de fonction stem:[\mathbb{P}_3] associé à stem:[2N-1]**
+
+image::{cvg_dir}Corr_case1_param1_degreePINNs.png[width=420.0,height=340.0]
+
+*Remarque :* Pour stem:[k=7] et stem:[N=512], on utilise le solveur itératif (tolérence : 1e-13, solveur : CG, préconditionneur : hypre_amg).
+
+### Tests sur FEM
+
+On veut voir si on a le même type de problème avec FEM en stem:[\mathbb{P}_3] sur des maillages plus fins.
+
+Comme on arrive pas à utiliser un solveur direct, on prendra un solveur itératif  (tolérence : 1e-13, solveur : CG, préconditionneur : hypre_amg) pour stem:[N=512] et stem:[N=1024].
+
+image::{cvg_dir}FEM-Corr_case1_param1_analyse.png[width=420.0,height=340.0]

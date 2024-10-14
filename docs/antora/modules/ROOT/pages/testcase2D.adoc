@@ -26,3 +26,5 @@ On considère les cas tests 2D suivant :
 ** Version 2 : PINNs (MLP) entrainé avec levelset + loss augmentée (dérivée 3ème)
 
 * Cas test 6 : Donut + Poisson modifié + Neumann
+
+* Cas test 7 : SquareDonut + Poisson modifié + Neumann
