@@ -488,6 +488,9 @@ title="Fullscreen mode"
 
 <article class="doc">
 <h1 class="page">Convergence</h1>
+<div class="sect1">
+<h2 id="_résultats"><a class="anchor" href="#_résultats"></a>1. Résultats</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><strong>Convergence obtenue pour FEM :</strong> pour 2 paramètres sélectionnés aléatoirement.</p>
 </div>
@@ -557,6 +560,63 @@ title="Fullscreen mode"
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_analyse_pic_en_mathbbp_3_pour_n256"><a class="anchor" href="#_analyse_pic_en_mathbbp_3_pour_n256"></a>2. Analyse - Pic en \(\mathbb{P}_3\) pour \(N=256\)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_tests_sur_la_correction"><a class="anchor" href="#_tests_sur_la_correction"></a>2.1. Tests sur la Correction</h3>
+<div class="paragraph">
+<p>Calcul de l&#8217;erreur \(L^2\) sur \(V_{ex}\), interpolation de \(u_{\theta}\) sur \(V_{\theta}\).</p>
+</div>
+<div class="paragraph">
+<p><strong>Méthode 1 : \(V_{\theta}=V_{ex}\) - espaces de fonction \(\mathbb{P}_k\) associé à \(N\).</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>\(k=5\)</strong> : \(N=256\) - erreur \(L^2\) = 7.11e-10.</p>
+</li>
+<li>
+<p><strong>\(k=6\)</strong> : \(N=16,\dots,256\) - erreurs \(L^2\) = 2.09e-06,8.09e-08,4.53e-09,2.72e-10,4.16e-11.</p>
+</li>
+<li>
+<p><strong>\(k=10\)</strong> :<br>
+\(N=256\) - solveur direct - erreur \(L^2\) = 2.19e-10.<br>
+\(N=256\) - solveur itératif - erreur \(L^2\) = 2.19e-10.<br>
+(tolérence : 1e-13 et 1e-15, solveur : CG, préconditionneur : hypre_amg)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Méthode 2 : \(V_{\theta}\) espace de fonction \(\mathbb{P}_{k}\) associé à \(N\) (\(k=5,\dots,10\)) ; \(V_{ex}\) espace de fonction \(\mathbb{P}_3\) associé à \(2N-1\)</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/cvg/Corr_case1_param1_degreePINNs.png" alt="Corr case1 param1 degreePINNs" width="420.0" height="340.0">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Remarque :</strong> Pour \(k=7\) et \(N=512\), on utilise le solveur itératif (tolérence : 1e-13, solveur : CG, préconditionneur : hypre_amg).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tests_sur_fem"><a class="anchor" href="#_tests_sur_fem"></a>2.2. Tests sur FEM</h3>
+<div class="paragraph">
+<p>On veut voir si on a le même type de problème avec FEM en \(\mathbb{P}_3\) sur des maillages plus fins.</p>
+</div>
+<div class="paragraph">
+<p>Comme on arrive pas à utiliser un solveur direct, on prendra un solveur itératif  (tolérence : 1e-13, solveur : CG, préconditionneur : hypre_amg) pour \(N=512\) et \(N=1024\).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/cvg/FEM-Corr_case1_param1_analyse.png" alt="FEM Corr case1 param1 analyse" width="420.0" height="340.0">
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   </div>
 </main>
