@@ -1,0 +1,51 @@
+:stem: latexmath
+# Cas test 3 - Carré + Elliptique + Dirichlet (non analytique)
+
+## Présentation
+
+On considère le problème de Poisson avec condition de Dirichlet défini par
+
+[stem]
+++++
+\left\{
+\begin{aligned}
+-div(K\nabla u) &= f, \; &&\text{dans } \; \Omega, \\
+u&=g, \; &&\text{sur } \; \Gamma.
+\end{aligned}
+\right.
+++++
+
+homogène sur stem:[\Omega] (stem:[g=0])
+
+On définit stem:[\Omega] comme étant le carré défini par
+
+[stem]
+++++
+\Omega=[0,1 \pi]^2
+++++
+
+On considèrera le second membre stem:[f] défini par
+[stem]
+++++
+f(x,y)=\exp\left(-\frac{(x-c_1)^2-(y-c_2)^2}{0.025 \sigma^2}\right)
+++++
+
+et la matrice stem:[K] définie par
+[stem]
+++++
+K=\begin{pmatrix}
+\epsilon x^2 + y^2 & (\epsilon - 1)xy \\
+(\epsilon - 1)xy & x^2 + \epsilon y^2
+\end{pmatrix}
+++++
+
+Dans ce cas test, on ne connaît pas de solutions exactes. On se contente donc de comparer les solutions obtenues à une solution de référence, obtenue à partir d'une résolution par éléments finis sur un maillage sur-raffinée.
+
+On définira 3 sous-cas :
+
+* "xref:tests_2D/testcase3/big/testcase3_big.adoc[Big]" (cas initial) : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.1,0.8]] et stem:[\epsilon\in[0.01,1]].
+
+* "Medium" : stem:[c_1,c_2\in[0.4,0.6]], stem:[\sigma\in[0.3,0.6]] et stem:[\epsilon\in[0.04,0.25]].
+** xref:tests_2D/testcase3/medium/testcase3_mediumclassic.adoc[Medium (ClassicNet)]
+** xref:tests_2D/testcase3/medium_largenet/testcase3_mediumlarge.adoc[Medium (LargeNet)]
+* "xref:tests_2D/testcase3/small/testcase3_small.adoc[Small]" : stem:[c_1,c_2\in[0.45,0.55]], stem:[\sigma\in[0.4,0.6]] et stem:[\epsilon\in[0.05,0.2]].

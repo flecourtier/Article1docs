@@ -1,0 +1,14 @@
+# Convergence
+:cvg_dir: cvg/tests_2D/
+
+**Convergence obtenue pour FEM :** pour 2 paramètres sélectionnés aléatoirement.
+
+image::{cvg_dir}fem/FEM_case5_v2_param1.png[width=420.0,height=340.0]
+
+**Convergence obtenue pour la Correction :** pour les mêmes paramètres.
+
+image::{cvg_dir}add/Corr_case5_v2_param1.png[width=420.0,height=340.0]
+
+**Sur le même graphique :** 
+
+image::{cvg_dir}fem-add/FEM-Corr_case5_v2_param1.png[width=420.0,height=340.0]

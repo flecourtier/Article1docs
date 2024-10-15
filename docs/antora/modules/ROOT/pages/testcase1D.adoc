@@ -1,0 +1,12 @@
+:stem: latexmath
+# Cas tests 1D
+
+On considère les cas tests 1D suivant :
+
+* Cas test 1 : Poisson + Dirichlet (solution analytique)
+** Version 1 : PINNs (MLP) entrainé avec levelset 
+** Version 2 : Réseau classique entrainé sur les data
+
+* Cas test 2 : Elliptic and Convection dominate regime (solution analytique) 
+** Version 1 : PINNs (MLP) entrainé avec levelset 
+** Version 2 : Même réseau avec 10000 époques supplémentaires

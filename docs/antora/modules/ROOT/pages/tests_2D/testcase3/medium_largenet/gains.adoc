@@ -1,0 +1,4 @@
+# Gains obtenus
+:facteurs_dir: facteurs/tests_2D/add/
+
+A compléter !

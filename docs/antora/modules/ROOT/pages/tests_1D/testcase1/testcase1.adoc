@@ -1,0 +1,26 @@
+:stem: latexmath
+# Cas test 1 : Poisson + Dirichlet
+
+On considère le problème de Poisson avec condition de Dirichlet défini par
+
+[stem]
+++++
+\left\{
+\begin{aligned}
+-\partial_{xx} u &= f, \; &&\text{dans } \; \Omega, \\
+u&=g, \; &&\text{sur } \; \Gamma.
+\end{aligned}
+\right.
+++++
+avec
+[stem]
+++++
+\Omega=[0,1].
+++++
+
+On considèrera pour ce cas test la solution analytique stem:[u_{ex}] défini par
+[stem]
+++++
+u_{ex}(x)=\alpha\sin(2\pi x)+\beta\sin(4\pi x)+\gamma\sin(6\pi x)
+++++
+homogène sur stem:[\Omega] (stem:[g=0]) et stem:[\alpha,\beta,\gamma\sim\mathcal{U}(0,1)] et le second membre stem:[f] associé.

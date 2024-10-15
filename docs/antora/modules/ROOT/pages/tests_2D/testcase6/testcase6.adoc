@@ -1,0 +1,69 @@
+:stem: latexmath
+# Cas test 6 - Donut + Poisson modifié + Neumann
+:training_dir: training/tests_2D/
+
+On considère le problème de Poisson modifié avec conditions de Neumann défini par
+
+[stem]
+++++
+\left\{
+\begin{aligned}
+-\Delta u + u &= f, \; &&\text{dans } \; \Omega, \\
+\frac{\partial u}{\partial n}&=h_E, \; &&\text{sur } \; \Gamma_E, \\
+\frac{\partial u}{\partial n}&=h_I, \; &&\text{sur } \; \Gamma_I.
+\end{aligned}
+\right.
+++++
+
+avec stem:[h_E=2\cos(1)] sur stem:[\Gamma_E] et stem:[h_I=-\cos(1/4)] sur stem:[\Gamma_I].
+
+On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).
+
+image::bc/tests_2D/testcase6.png[width=260.0,height=140.0]
+
+On considèrera la solution analytique stem:[u_{ex}] définie par
+[stem]
+++++
+u_{ex}(x,y)=\sin(x^2+y^2)
+++++
+et le second membre stem:[f] associé, défini par
+[stem]
+++++
+f(x,y)=(4(x^2+y^2)+1)\sin(x^2+y^2) - 4\cos(x^2+y^2)
+++++
+
+On définit alors les fonctions levelset respectives par
+[stem]
+++++
+\phi_I(x,y)=\sqrt{x^2+y^2}-0.5 \quad \text{et} \quad \phi_E(x,y)=1-\sqrt{x^2+y^2}
+++++
+
+[NOTE]
+.Signe de la levelset
+====
+Attention, comme présenté dans le xref:tests_2D/testcase5/testcase5.adoc[Cas test 5], dans le papier la levelset est définie comme étant positive à l'intérieur du domaine et négative à l'extérieur. Dans le cas tests précédents le 5, c'était l'inverse.
+====
+
+[NOTE]
+.Fonction levelset normalisée
+====
+On remarquera que les levelsets considérées ici sont normalisées, plus précisément la norme de leur gradient est égale à 1 sur le bord du domaine. 
+====
+
+La fonction levelset est alors définie, comme présenté dans le papier, par
+[stem]
+++++
+\phi(x,y)=\frac{\phi_E\phi_I}{\phi_E+\phi_I}
+++++
+
+On définit alors le réseau de neurones par
+[stem]
+++++
+u_\theta(x,y)=w_{\theta,1}-\phi\nabla\phi\cdot\nabla w_{\theta,1} - \phi h + \phi^2 w_{\theta,2}
+++++
+avec 
+[stem]
+++++
+h = h_E\frac{\phi_I^2}{\phi_I^2+\phi_E^2} + h_I\frac{\phi_E^2}{\phi_I^2+\phi_E^2}
+++++
+où stem:[w_{\theta,1}] et stem:[w_{\theta,2}] sont deux réseaus de neurones.

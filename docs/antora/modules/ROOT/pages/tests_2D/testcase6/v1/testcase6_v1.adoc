@@ -1,0 +1,8 @@
+# Cas test 6 : V1 - Loss classique
+:training_dir: training/tests_2D/
+
+## Entraînement (avec levelset)
+
+On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
+
+image::{training_dir}test_fe6.png[width=840.0,height=680.0]

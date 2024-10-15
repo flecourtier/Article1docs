@@ -1,0 +1,10 @@
+# Cas test 1 : V3 - Test non exact BC
+:training_dir: training/tests_2D/
+
+Dans cette troisième version, on utilise une loss de bord pour les conditions de Dirichlet (et non la levelset). Ce qui implique que le réseau n'est pas exact au bord;
+
+## Entraînement (avec loss BC)
+
+On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
+
+image::{training_dir}test_fe1_v3.png[width=840.0,height=680.0]
