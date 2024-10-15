@@ -1,0 +1,42 @@
+# Plots - Approche additive
+:errormap_dir: errormap/tests_1D/testcase2/
+
+**stem:[N=10] :**
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}add/Corr_case2_param1_degree1_nbvert10.png[width=420.0,height=340.0]
+|image::{errormap_dir}add/Corr_case2_param2_degree1_nbvert10.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=20] :**
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}add/Corr_case2_param1_degree1_nbvert20.png[width=420.0,height=340.0]
+|image::{errormap_dir}add/Corr_case2_param2_degree1_nbvert20.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=40] :**
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}add/Corr_case2_param1_degree1_nbvert40.png[width=420.0,height=340.0]
+|image::{errormap_dir}add/Corr_case2_param2_degree1_nbvert40.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=80] :**
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}add/Corr_case2_param1_degree1_nbvert80.png[width=420.0,height=340.0]
+|image::{errormap_dir}add/Corr_case2_param2_degree1_nbvert80.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=160] :**
+
+[cols="a,a"]
+|===
+|image::{errormap_dir}add/Corr_case2_param1_degree1_nbvert160.png[width=420.0,height=340.0]
+|image::{errormap_dir}add/Corr_case2_param2_degree1_nbvert160.png[width=420.0,height=340.0]
+|===

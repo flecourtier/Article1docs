@@ -16,6 +16,24 @@
 *** xref:tests_1D/testcase1/v2/cvg.adoc[Convergence des méthodes]
 *** xref:tests_1D/testcase1/v2/gains.adoc[Facteurs obtenus]
 *** xref:tests_1D/testcase1/v2/errormap.adoc[Plots]
+// TestCase2 //
+* xref:tests_1D/testcase2/testcase2.adoc[Test2 - Poisson + Elliptic and Convection Dominate Regime]
+// V1
+** xref:tests_1D/testcase2/v1/testcase2_v1.adoc[V1 - 20000 époques]
+*** xref:tests_1D/testcase2/v1/cvg.adoc[Convergence des méthodes]
+*** xref:tests_1D/testcase2/v1/errormap.adoc[Plots]
+**** xref:tests_1D/testcase2/v1/errormap/errormap_fem.adoc[FEM standard]
+**** xref:tests_1D/testcase2/v1/errormap/errormap_add.adoc[Additive]
+**** xref:tests_1D/testcase2/v1/errormap/errormap_mult_strong.adoc[Multiplicative - Strong]
+**** xref:tests_1D/testcase2/v1/errormap/errormap_mult_weak.adoc[Multiplicative - Weak]
+// V2
+** xref:tests_1D/testcase2/v2/testcase2_v2.adoc[V2 - 30000 époques]
+*** xref:tests_1D/testcase2/v2/cvg.adoc[Convergence des méthodes]
+*** xref:tests_1D/testcase2/v2/errormap.adoc[Plots]
+**** xref:tests_1D/testcase2/v2/errormap/errormap_fem.adoc[FEM standard]
+**** xref:tests_1D/testcase2/v2/errormap/errormap_add.adoc[Additive]
+**** xref:tests_1D/testcase2/v2/errormap/errormap_mult_strong.adoc[Multiplicative - Strong]
+**** xref:tests_1D/testcase2/v2/errormap/errormap_mult_weak.adoc[Multiplicative - Weak]
 
 //////////////////
 // Cas tests 2D //

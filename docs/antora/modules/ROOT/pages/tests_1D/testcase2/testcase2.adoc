@@ -1,0 +1,32 @@
+:stem: latexmath
+# Cas test 2 : Poisson + Elliptic and Convection Dominate Regime
+
+On considère le problème suivant avec condition de Dirichlet défini par
+
+[stem]
+++++
+\left\{
+\begin{aligned}
+\partial_{x} u - \frac{1}{\text{Pe}}\partial_{xx} u &= r, \; &&\text{dans } \; \Omega, \\
+u&=g, \; &&\text{sur } \; \Gamma.
+\end{aligned}
+\right.
+++++
+avec
+[stem]
+++++
+\Omega=[0,1].
+++++
+
+On considèrera pour ce cas test la solution analytique stem:[u_{ex}] défini par
+[stem]
+++++
+u_{ex}(x)=r\left(x - \frac{e^{\text{Pe}x}-1}{e^{\text{Pe}}-1}\right)
+++++
+homogène sur stem:[\Omega] (stem:[g=0]), stem:[r\sim\mathcal{U}(1,2)] et stem:[\text{Pe}\sim\mathcal{U}(10,100)]
+
+[NOTE]
+.Calcul des erreurs
+====
+On notera qu'ici les erreurs sont des erreurs absolues, contrairement à tous les autres cas présentés.
+====
