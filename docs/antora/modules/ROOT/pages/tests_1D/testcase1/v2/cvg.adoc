@@ -1,0 +1,12 @@
+# Convergence
+:cvg_dir: cvg/tests_1D/fem-corr/
+
+**Sur le même graphique :** pour 4 paramètres sélectionnés.
+
+[cols="a,a,a,a"]
+|===
+|image::{cvg_dir}FEM-Corr_case1_v2_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}FEM-Corr_case1_v2_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}FEM-Corr_case1_v2_param3.png[width=420.0,height=340.0]
+|image::{cvg_dir}FEM-Corr_case1_v2_param4.png[width=420.0,height=340.0]
+|===

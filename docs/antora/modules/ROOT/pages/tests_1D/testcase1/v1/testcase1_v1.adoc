@@ -1,0 +1,8 @@
+# Cas test 1 : V1 - PINNs
+:training_dir: training/tests_1D/
+
+## Entraînement (avec levelset)
+
+On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
+
+image::{training_dir}test_fe1.png[width=840.0,height=680.0]

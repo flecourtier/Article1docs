@@ -6,6 +6,14 @@
 .xref:testcase1D.adoc[Cas tests 1D]
 // TestCase1 //
 * xref:tests_1D/testcase1/testcase1.adoc[Test1 - Poisson + Dirichlet]
+// V1
+** xref:tests_1D/testcase1/v1/testcase1_v1.adoc[V1 - PINN]
+*** xref:tests_1D/testcase1/v1/cvg.adoc[Convergence des méthodes]
+*** xref:tests_1D/testcase1/v1/gains.adoc[Facteurs obtenus]
+// V2
+** xref:tests_1D/testcase1/v2/testcase1_v2.adoc[V2 - Data network]
+*** xref:tests_1D/testcase1/v2/cvg.adoc[Convergence des méthodes]
+*** xref:tests_1D/testcase1/v2/gains.adoc[Facteurs obtenus]
 
 //////////////////
 // Cas tests 2D //
