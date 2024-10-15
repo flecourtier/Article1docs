@@ -1,20 +1,8 @@
 # Gains obtenus
-:facteurs_dir: cvg/tests_1D/tab/
+:facteurs_dir: facteurs/tests_1D/
 
-Résultats obtenus en P1.
+**Résultats obtenus en P1 :**
 
-**Paramètre 1 :**
+image::{facteurs_dir}boxplot_facteurs_case1_degree1.png[width=640.0,height=500.0]
 
-image::{facteurs_dir}Tab_case1_version1_param1_degree1.png[width=640.0,height=500.0]
-
-**Paramètre 2 :**
-
-image::{facteurs_dir}Tab_case1_version1_param2_degree1.png[width=640.0,height=500.0]
-
-**Paramètre 3 :**
-
-image::{facteurs_dir}Tab_case1_version1_param3_degree1.png[width=640.0,height=500.0]
-
-**Paramètre 4 :**
-
-image::{facteurs_dir}Tab_case1_version1_param4_degree1.png[width=640.0,height=500.0]
+image::{facteurs_dir}gains_table_case1_degree1.png[width=640.0,height=500.0]

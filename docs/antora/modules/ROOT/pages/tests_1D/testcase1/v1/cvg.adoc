@@ -1,5 +1,10 @@
 # Convergence
 :cvg_dir: cvg/tests_1D/fem-corr/
+:tab_dir: cvg/tests_1D/tab/
+
+**Résultats obtenus en P1.**
+
+## Courbes de convergence
 
 **Sur le même graphique :** pour 4 paramètres sélectionnés.
 
@@ -10,3 +15,21 @@
 |image::{cvg_dir}FEM-Corr_case1_param3.png[width=420.0,height=340.0]
 |image::{cvg_dir}FEM-Corr_case1_param4.png[width=420.0,height=340.0]
 |===
+
+## Résultats numériques
+
+**Paramètre 1 :**
+
+image::{tab_dir}Tab_case1_version1_param1_degree1.png[width=640.0,height=500.0]
+
+**Paramètre 2 :**
+
+image::{tab_dir}Tab_case1_version1_param2_degree1.png[width=640.0,height=500.0]
+
+**Paramètre 3 :**
+
+image::{tab_dir}Tab_case1_version1_param3_degree1.png[width=640.0,height=500.0]
+
+**Paramètre 4 :**
+
+image::{tab_dir}Tab_case1_version1_param4_degree1.png[width=640.0,height=500.0]

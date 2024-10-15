@@ -1,0 +1,18 @@
+# Errormap
+:errormap_dir: errormap/tests_1D/testcase1/
+
+## Paramètre 1
+
+image::{errormap_dir}plot_1_v2.png[width=630.0,height=510.0]
+
+## Paramètre 2
+
+image::{errormap_dir}plot_2_v2.png[width=630.0,height=510.0]
+
+## Paramètre 3
+
+image::{errormap_dir}plot_3_v2.png[width=630.0,height=510.0]
+
+## Paramètre 4
+
+image::{errormap_dir}plot_4_v2.png[width=630.0,height=510.0]
