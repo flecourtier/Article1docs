@@ -43,10 +43,13 @@
 * xref:tests_2D/testcase1/testcase1.adoc[Test1 - Carré + Poisson + Dirichlet (basse fréquence)]
 // V1
 ** xref:tests_2D/testcase1/v1/testcase1_v1.adoc[V1 - Loss classique]
-*** xref:tests_2D/testcase1/v1/cvg.adoc[Convergence des méthodes]
-*** xref:tests_2D/testcase1/v1/gains.adoc[Facteurs obtenus]
-*** xref:tests_2D/testcase1/v1/time_precision.adoc[Ratio temps/precision]
-*** xref:tests_2D/testcase1/v1/plotcorr.adoc[Plots correction]
+*** xref:tests_2D/testcase1/v1/fenics/fenics.adoc[FEniCS]
+**** xref:tests_2D/testcase1/v1/fenics/cvg.adoc[Convergence des méthodes]
+**** xref:tests_2D/testcase1/v1/fenics/gains.adoc[Facteurs obtenus]
+**** xref:tests_2D/testcase1/v1/fenics/time_precision.adoc[Ratio temps/precision]
+**** xref:tests_2D/testcase1/v1/fenics/plotcorr.adoc[Plots correction]
+*** xref:tests_2D/testcase1/v1/fenicsx/fenicsx.adoc[FEniCSx]
+**** xref:tests_2D/testcase1/v1/fenicsx/cvg.adoc[Convergence des méthodes]
 // V2
 ** xref:tests_2D/testcase1/v2/testcase1_v2.adoc[V2 - Loss augmentée (dérivées 3ème)]
 *** xref:tests_2D/testcase1/v2/cvg.adoc[Convergence des méthodes]
