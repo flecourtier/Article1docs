@@ -1,0 +1,43 @@
+# Plots - FEM standard
+:plot_dir_mu1: test_1D/testcase2/version1/cvg/param1/FEM_plot/
+:plot_dir_mu2: test_1D/testcase2/version1/cvg/param2/FEM_plot/
+
+**stem:[N=16] :**
+
+[cols="a,a"]
+|===
+|image::{plot_dir_mu1}FEM_plot_case2_v1_param1_degree1_N16.png[width=420.0,height=340.0]
+|image::{plot_dir_mu2}FEM_plot_case2_v1_param2_degree1_N16.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=32] :**
+
+[cols="a,a"]
+|===
+|image::{plot_dir_mu1}FEM_plot_case2_v1_param1_degree1_N32.png[width=420.0,height=340.0]
+|image::{plot_dir_mu2}FEM_plot_case2_v1_param2_degree1_N32.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=64] :**
+
+[cols="a,a"]
+|===
+|image::{plot_dir_mu1}FEM_plot_case2_v1_param1_degree1_N64.png[width=420.0,height=340.0]
+|image::{plot_dir_mu2}FEM_plot_case2_v1_param2_degree1_N64.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=128] :**
+
+[cols="a,a"]
+|===
+|image::{plot_dir_mu1}FEM_plot_case2_v1_param1_degree1_N128.png[width=420.0,height=340.0]
+|image::{plot_dir_mu2}FEM_plot_case2_v1_param2_degree1_N128.png[width=420.0,height=340.0]
+|===
+
+**stem:[N=256] :**
+
+[cols="a,a"]
+|===
+|image::{plot_dir_mu1}FEM_plot_case2_v1_param1_degree1_N256.png[width=420.0,height=340.0]
+|image::{plot_dir_mu2}FEM_plot_case2_v1_param2_degree1_N256.png[width=420.0,height=340.0]
+|===

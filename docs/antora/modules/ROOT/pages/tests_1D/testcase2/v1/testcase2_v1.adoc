@@ -1,5 +1,5 @@
 # Cas test 2 : V1 - 20000 époques
-:training_dir: training/tests_1D/
+:training_dir: training/test_1D/
 
 ## Entraînement (avec levelset)
 

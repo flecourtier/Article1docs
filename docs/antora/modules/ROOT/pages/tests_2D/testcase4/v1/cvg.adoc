@@ -1,0 +1,42 @@
+# Convergence
+:cvg_dir: test_2D/testcase4/version1/cvg/
+
+## Courbes de convergence
+
+**Paramètre 1 :**
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param1/FEM_case4_v1_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/Corr_case4_v1_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Corr_case4_v1_param1.png[width=420.0,height=340.0]
+|===
+
+**Paramètre 2 :**
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param2/FEM_case4_v1_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/Corr_case4_v1_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM-Corr_case4_v1_param2.png[width=420.0,height=340.0]
+|===
+
+## Résultats numériques
+
+**Paramètre 1 :** P1,P2,P3
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param1/Tab_case4_v1_param1_degree1.png[width=640.0,height=500.0]
+|image::{cvg_dir}param1/Tab_case4_v1_param1_degree2.png[width=640.0,height=500.0]
+|image::{cvg_dir}param1/Tab_case4_v1_param1_degree3.png[width=640.0,height=500.0]
+|===
+
+**Paramètre 2 :** P1,P2,P3
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param2/Tab_case4_v1_param2_degree1.png[width=640.0,height=500.0]
+|image::{cvg_dir}param2/Tab_case4_v1_param2_degree2.png[width=640.0,height=500.0]
+|image::{cvg_dir}param2/Tab_case4_v1_param2_degree3.png[width=640.0,height=500.0]
+|===

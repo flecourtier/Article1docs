@@ -1,4 +1,0 @@
-# Convergence
-:cvg_dir: cvg/tests_2D/
-
-A compléter !

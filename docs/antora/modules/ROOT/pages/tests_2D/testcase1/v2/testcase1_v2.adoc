@@ -1,7 +1,5 @@
-# Cas test 1 : V2 - Loss augmentée (dérivées 3ème)
-:training_dir: training/tests_2D/
-
-Dans cette seconde version, on utilise les dérivées troisièmes dans l'entrainement.
+# Cas test 1 : V2 - Loss augmentée
+:training_dir: training/test_2D/
 
 ## Entraînement (avec levelset)
 

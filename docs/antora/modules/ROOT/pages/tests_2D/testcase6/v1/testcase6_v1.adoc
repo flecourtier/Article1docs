@@ -1,5 +1,5 @@
 # Cas test 6 : V1 - Loss classique
-:training_dir: training/tests_2D/
+:training_dir: training/test_2D/
 
 ## Entraînement (avec levelset)
 

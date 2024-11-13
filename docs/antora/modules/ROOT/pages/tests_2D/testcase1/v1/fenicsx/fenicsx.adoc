@@ -1,3 +1,0 @@
-# FEniCSx
-
-On effectuera ici les tests avec FEniCSx.

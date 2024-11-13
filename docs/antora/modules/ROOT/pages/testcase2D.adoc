@@ -6,7 +6,6 @@ On considère les cas tests 2D suivant :
 * Cas test 1 : Carré + Poisson + Dirichlet (solution analytique basse fréquence)
 ** Version 1 : PINNs (MLP) entrainé avec levelset 
 ** Version 2 : PINNs (MLP) entrainé avec levelset + loss augmentée (dérivée 3ème)
-** Version 3 : PINNs (MLP) entrainé avec loss BC 
 
 * Cas test 2 : Carré + Poisson + Dirichlet (solution analytique haute fréquence) 
 ** Version 1 : PINNs (Fourier) entrainé avec levelset 

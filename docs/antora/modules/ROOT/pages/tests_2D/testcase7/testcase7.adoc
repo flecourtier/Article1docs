@@ -21,7 +21,7 @@ On définit stem:[\Omega] comme étant un "squaredonut" défini par
 \Omega = [-1,1]^2 \backslash [-0.5,0.5]^2
 ++++
 
-image::bc/tests_2D/testcase7.png[width=260.0,height=140.0]
+image::test_2D/bc/testcase7.png[width=260.0,height=140.0]
 
 On considèrera la solution analytique stem:[u_{ex}] définie par
 [stem]

@@ -1,6 +1,0 @@
-# Plots
-
-* xref:tests_1D/testcase2/v2/errormap/errormap_fem.adoc[FEM standard]
-* xref:tests_1D/testcase2/v2/errormap/errormap_add.adoc[Additive]
-* xref:tests_1D/testcase2/v2/errormap/errormap_mult_strong.adoc[Multiplicative - Strong]
-* xref:tests_1D/testcase2/v2/errormap/errormap_mult_weak.adoc[Multiplicative - Weak]

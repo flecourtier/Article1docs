@@ -1,0 +1,6 @@
+# Gains obtenus
+:gains_dir: test_1D/testcase2/version1/gains/
+
+**Résultats obtenus en P1 :**
+
+image::{gains_dir}Tab_stats_case2_v1_degree1.png[width=640.0,height=500.0]

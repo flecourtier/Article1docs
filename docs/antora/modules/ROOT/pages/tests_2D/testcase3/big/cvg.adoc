@@ -1,32 +1,62 @@
-# Convergence - additive
-:cvg_dir: cvg/tests_2D/
+# Convergence
+:cvg_dir: test_2D/testcase3/big/cvg/
 
-## Précision
+## Courbes de convergence (additive)
 
-La difficulté dans ce cas réside dans le fait qu'on ne connaise pas la solution analytique du problème. Ainsi pour vérifier les convergences des méthodes, on va avoir besoin de construire une solution de référence suffisement précise. Pour celà, on va utiliser FEM sur un maillage surrafinée (ici on a pris stem:[N=1000] et stem:[P3]). Comme c'est un problème assez conséquent on s'est placé sur Gaya et on a du modifier le solveur de FEniCS pour qu'il puisse tourner sur un maillage de cette taille. Plus précisément on a utilisé un solveur itératif (ici un CG - Gradient conjugué) avec une tolérence fixée à stem:[10^{-13}], ainsi qu'un préconditionneur "hypre_amg".
+**Paramètre 1 :**
 
-## Résultats
-
-**Convergence obtenue pour FEM :** pour 2 paramètres sélectionnés aléatoirement.
-
-[cols="a,a"]
+[cols="a,a,a"]
 |===
-|image::{cvg_dir}fem/FEM_case3_param1.png[width=420.0,height=340.0]
-|image::{cvg_dir}fem/FEM_case3_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM_case3_vbig_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/Corr_case3_vbig_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Corr_case3_vbig_param1.png[width=420.0,height=340.0]
 |===
 
-**Convergence obtenue pour la Correction :** pour les mêmes paramètres.
+**Paramètre 2 :**
 
-[cols="a,a"]
+[cols="a,a,a"]
 |===
-|image::{cvg_dir}add/Corr_case3_param1.png[width=420.0,height=340.0]
-|image::{cvg_dir}add/Corr_case3_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM_case3_vbig_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/Corr_case3_vbig_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM-Corr_case3_vbig_param2.png[width=420.0,height=340.0]
 |===
 
-**Sur le même graphique :** 
+## Courbes de convergence (multiplicative)
 
-[cols="a,a"]
+**Paramètre 1 :**
+
+[cols="a,a,a,a"]
 |===
-|image::{cvg_dir}fem-add/FEM-Corr_case3_param1.png[width=420.0,height=340.0]
-|image::{cvg_dir}fem-add/FEM-Corr_case3_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Mult_case3_vbig_param1_M0.0.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Mult_case3_vbig_param1_M0.1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Mult_case3_vbig_param1_M1.0.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Mult_case3_vbig_param1_M100.0.png[width=420.0,height=340.0]
 |===
+
+**Paramètre 2 :**
+
+[cols="a,a,a,a"]
+|===
+|image::{cvg_dir}param2/FEM-Mult_case3_vbig_param2_M0.0.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM-Mult_case3_vbig_param2_M0.1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM-Mult_case3_vbig_param2_M1.0.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM-Mult_case3_vbig_param2_M100.0.png[width=420.0,height=340.0]
+|===
+
+## Résultats numériques
+
+**Paramètre 1 :** P1,P2,P3
+
+image::{cvg_dir}param1/Tab_case3_vbig_param1_degree1.png[width=640.0,height=500.0]
+
+image::{cvg_dir}param1/Tab_case3_vbig_param1_degree2.png[width=640.0,height=500.0]
+
+image::{cvg_dir}param1/Tab_case3_vbig_param1_degree3.png[width=640.0,height=500.0]
+
+**Paramètre 2 :** P1,P2,P3
+
+image::{cvg_dir}param2/Tab_case3_vbig_param2_degree1.png[width=640.0,height=500.0]
+
+image::{cvg_dir}param2/Tab_case3_vbig_param2_degree2.png[width=640.0,height=500.0]
+
+image::{cvg_dir}param2/Tab_case3_vbig_param2_degree3.png[width=640.0,height=500.0]

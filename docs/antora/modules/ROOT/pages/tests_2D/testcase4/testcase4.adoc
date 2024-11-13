@@ -1,8 +1,5 @@
 :stem: latexmath
 # Cas test 4 - Donut + Poisson + Dirichlet
-:training_dir: training/tests_2D/
-
-## Présentation
 
 On considère le problème de Poisson avec condition de Dirichlet défini par
 
@@ -21,7 +18,7 @@ avec stem:[g_I=u_{ex}] sur stem:[\Gamma_I] et stem:[g_E=0] sur stem:[\Gamma_E].
 
 On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).
 
-image::bc/tests_2D/testcase4.png[width=260.0,height=140.0]
+image::test_2D/bc//testcase4.png[width=260.0,height=140.0]
 
 On considèrera la solution analytique stem:[u_{ex}] définie par
 [stem]
@@ -51,9 +48,3 @@ g = -g_I \frac{\phi_E}{0.75}+g_E \frac{\phi_I}{0.75}
 ++++
 Or contrairement à la version 4, stem:[g_I] n'est pas une constante ici.
 ====
-
-## Entraînement
-
-On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
-
-image::{training_dir}test_fe4.png[width=840.0,height=680.0]

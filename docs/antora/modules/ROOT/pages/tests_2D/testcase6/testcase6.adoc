@@ -1,6 +1,5 @@
 :stem: latexmath
 # Cas test 6 - Donut + Poisson modifié + Neumann
-:training_dir: training/tests_2D/
 
 On considère le problème de Poisson modifié avec conditions de Neumann défini par
 
@@ -19,7 +18,7 @@ avec stem:[h_E=2\cos(1)] sur stem:[\Gamma_E] et stem:[h_I=-\cos(1/4)] sur stem:[
 
 On définit stem:[\Omega] comme étant un "donut" (le cercle unité avec un trou de rayon 0.5).
 
-image::bc/tests_2D/testcase6.png[width=260.0,height=140.0]
+image::test_2D/bc/testcase6.png[width=260.0,height=140.0]
 
 On considèrera la solution analytique stem:[u_{ex}] définie par
 [stem]

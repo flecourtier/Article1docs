@@ -1,14 +1,26 @@
 # Convergence
-:cvg_dir: cvg/tests_2D/
+:cvg_dir: test_2D/testcase6/version1/cvg/
 
-**Convergence obtenue pour FEM :** pour 2 paramètres sélectionnés aléatoirement.
+*Problème pour stem:[N=256].*
 
-image::{cvg_dir}fem/FEM_case6_param1.png[width=420.0,height=340.0]
+## Courbes de convergence
 
-**Convergence obtenue pour la Correction :** pour les mêmes paramètres.
+**Paramètre 1 :**
 
-image::{cvg_dir}add/Corr_case6_param1.png[width=420.0,height=340.0]
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param1/FEM_case6_v1_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/Corr_case6_v1_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Corr_case6_v1_param1.png[width=420.0,height=340.0]
+|===
 
-**Sur le même graphique :** 
+## Résultats numériques
 
-image::{cvg_dir}fem-add/FEM-Corr_case6_param1.png[width=420.0,height=340.0]
+**Paramètre 1 :** P1,P2,P3
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param1/Tab_case6_v1_param1_degree1.png[width=640.0,height=500.0]
+|image::{cvg_dir}param1/Tab_case6_v1_param1_degree2.png[width=640.0,height=500.0]
+|image::{cvg_dir}param1/Tab_case6_v1_param1_degree3.png[width=640.0,height=500.0]
+|===

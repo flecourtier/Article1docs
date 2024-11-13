@@ -1,8 +1,8 @@
-# Cas test 5 : V2 - Loss augmentée (dérivées 3ème)
-:training_dir: training/tests_2D/
+# Cas test 1 : V2 - Loss augmentée
+:training_dir: training/test_2D/
 
 ## Entraînement (avec levelset)
 
 On résout dans un premier temps ce problème en utilisant un PINNs et on obtient l'entraînement suivant.
 
-image::{training_dir}test_fe5_v2.png[width=840.0,height=680.0]
+image::{training_dir}test_fe1_v2.png[width=840.0,height=680.0]

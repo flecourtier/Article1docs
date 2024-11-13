@@ -24,9 +24,3 @@ On considèrera pour ce cas test la solution analytique stem:[u_{ex}] défini pa
 u_{ex}(x)=r\left(x - \frac{e^{\text{Pe}x}-1}{e^{\text{Pe}}-1}\right)
 ++++
 homogène sur stem:[\Omega] (stem:[g=0]), stem:[r\sim\mathcal{U}(1,2)] et stem:[\text{Pe}\sim\mathcal{U}(10,100)]
-
-[NOTE]
-.Calcul des erreurs
-====
-On notera qu'ici les erreurs sont des erreurs absolues, contrairement à tous les autres cas présentés.
-====

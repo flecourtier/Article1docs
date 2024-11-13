@@ -1,26 +1,42 @@
 # Convergence
-:cvg_dir: cvg/tests_2D/
+:cvg_dir: test_2D/testcase1/version2/cvg/
 
-**Convergence obtenue pour FEM :** pour 2 paramètres sélectionnés aléatoirement.
+## Courbes de convergence
 
-[cols="a,a"]
+**Paramètre 1 :**
+
+[cols="a,a,a"]
 |===
-|image::{cvg_dir}fem/FEM_case1_v2_param1.png[width=420.0,height=340.0]
-|image::{cvg_dir}fem/FEM_case1_v2_param2.png[width=420.0,height=340.0]
-|===
-
-**Convergence obtenue pour la Correction :** pour les mêmes paramètres.
-
-[cols="a,a"]
-|===
-|image::{cvg_dir}add/Corr_case1_v2_param1.png[width=420.0,height=340.0]
-|image::{cvg_dir}add/Corr_case1_v2_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM_case1_v2_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/Corr_case1_v2_param1.png[width=420.0,height=340.0]
+|image::{cvg_dir}param1/FEM-Corr_case1_v2_param1.png[width=420.0,height=340.0]
 |===
 
-**Sur le même graphique :** 
+**Paramètre 2 :**
 
-[cols="a,a"]
+[cols="a,a,a"]
 |===
-|image::{cvg_dir}fem-add/FEM-Corr_case1_v2_param1.png[width=420.0,height=340.0]
-|image::{cvg_dir}fem-add/FEM-Corr_case1_v2_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM_case1_v2_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/Corr_case1_v2_param2.png[width=420.0,height=340.0]
+|image::{cvg_dir}param2/FEM-Corr_case1_v2_param2.png[width=420.0,height=340.0]
+|===
+
+## Résultats numériques
+
+**Paramètre 1 :** P1,P2,P3
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param1/Tab_case1_v2_param1_degree1.png[width=640.0,height=500.0]
+|image::{cvg_dir}param1/Tab_case1_v2_param1_degree2.png[width=640.0,height=500.0]
+|image::{cvg_dir}param1/Tab_case1_v2_param1_degree3.png[width=640.0,height=500.0]
+|===
+
+**Paramètre 2 :** P1,P2,P3
+
+[cols="a,a,a"]
+|===
+|image::{cvg_dir}param2/Tab_case1_v2_param2_degree1.png[width=640.0,height=500.0]
+|image::{cvg_dir}param2/Tab_case1_v2_param2_degree2.png[width=640.0,height=500.0]
+|image::{cvg_dir}param2/Tab_case1_v2_param2_degree3.png[width=640.0,height=500.0]
 |===

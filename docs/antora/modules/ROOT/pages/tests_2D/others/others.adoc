@@ -1,3 +1,0 @@
-# Autres cas tests
-
-TODO: Add a description of the test cases here.

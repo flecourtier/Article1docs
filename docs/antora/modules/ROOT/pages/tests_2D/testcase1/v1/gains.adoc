@@ -1,0 +1,14 @@
+# Gains obtenus
+:gains_dir: test_2D/testcase1/version1/gains/
+
+**Résultats obtenus en P1 :**
+
+image::{gains_dir}Tab_stats_case1_v1_degree1.png[width=640.0,height=500.0]
+
+**Résultats obtenus en P2 :**
+
+image::{gains_dir}Tab_stats_case1_v1_degree2.png[width=640.0,height=500.0]
+
+**Résultats obtenus en P3 :**
+
+image::{gains_dir}Tab_stats_case1_v1_degree3.png[width=640.0,height=500.0]

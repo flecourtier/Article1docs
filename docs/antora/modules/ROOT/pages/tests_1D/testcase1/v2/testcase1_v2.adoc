@@ -1,5 +1,5 @@
 # Cas test 1 : V2 - Data network
-:training_dir: training/tests_1D/
+:training_dir: training/test_1D/
 
 ## Entraînement
 

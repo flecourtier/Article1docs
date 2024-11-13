@@ -1,14 +1,14 @@
 # Gains obtenus
-:facteurs_dir: facteurs/tests_2D/add/
+:gains_dir: test_2D/testcase1/version2/gains/
 
 **Résultats obtenus en P1 :**
 
-image::{facteurs_dir}boxplot_facteurs_case1_v2_degree1.png[width=640.0,height=500.0]
+image::{gains_dir}Tab_stats_case1_v2_degree1.png[width=640.0,height=500.0]
 
 **Résultats obtenus en P2 :**
 
-image::{facteurs_dir}boxplot_facteurs_case1_v2_degree2.png[width=640.0,height=500.0]
+image::{gains_dir}Tab_stats_case1_v2_degree2.png[width=640.0,height=500.0]
 
 **Résultats obtenus en P3 :**
 
-image::{facteurs_dir}boxplot_facteurs_case1_v2_degree3.png[width=640.0,height=500.0]
+image::{gains_dir}Tab_stats_case1_v2_degree3.png[width=640.0,height=500.0]
